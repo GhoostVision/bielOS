@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+.barra_lateral {
+  background: white;
+  min-height: 98vh;
+  box-shadow: 2px 2px 10px black;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.barra_lateral h1 {
+  color: black;
+  padding: 10px 0;
+}
+.barra_lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+.barra_lateral ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.painel_principal {
+  background: white;
+  min-height: 98vh;
+  box-shadow: 2px 2px 10px black;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.inicio {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.inicio_apresentacao {
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  height: 25vh;
+  margin: 5px;
+  display: flex;
+  border: 1px solid rgb(192, 192, 192);
+}
+.inicio_apresentacao .apresentcao-info {
+  width: 70%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inicio_apresentacao .apresentcao-info span {
+  margin: 0 20px;
+  font-weight: 200;
+  font-size: 16px;
+  color: black;
+}
+.inicio_apresentacao .apresentcao-info h2 {
+  margin: 0 20px;
+  font-size: 60px;
+  font-weight: 500;
+  color: black;
+}
+
+.apresentacao-tempo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.apresentacao-tempo .horas_inicio {
+  font-size: 55px;
+  color: black;
+}
+.apresentacao-tempo .data_inicio {
+  font-weight: 200;
+  color: black;
+}
+
+.estudos {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresetacao-estduos {
+  width: 99%;
+  height: 15vh;
+  margin: 5px;
+  border: 1px solid rgb(192, 192, 192);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.apresetacao-estduos h2 {
+  margin: 0 20px;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

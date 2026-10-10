@@ -1,0 +1,57 @@
+@use "../utilites/colors.scss" as *;
+
+.inicio{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.inicio_apresentacao{
+    background-color: $cor-principal;
+    width: 100%;
+    border-radius: 5px;
+    height: 25vh;
+    margin: 5px;
+    display: flex;
+    border: 1px solid $cor-prata;
+
+    .apresentcao-info{
+        width: 70%;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        span{
+            margin: 0 20px;
+            font-weight: 200;
+            font-size: 16px;
+            color: $cor-texto;
+        }
+
+        h2{
+            margin: 0 20px;
+            font-size: 60px;
+            font-weight: 500;
+            color: $cor-texto;
+        }
+    }
+}
+
+.apresentacao-tempo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .horas_inicio{
+        font-size: 55px;
+        color: $cor-texto;
+    }
+
+    .data_inicio{
+        font-weight: 200;
+        color: $cor-texto;
+    }
+}

@@ -1,0 +1,22 @@
+@use "../utilites/colors.scss" as *;
+
+.estudos{
+    display: flex;
+    flex-direction: column;
+}
+
+.apresetacao-estduos{
+    width: 99%;
+    height: 15vh;
+    margin: 5px;
+    border: 1px solid $cor-prata;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+
+    h2{
+        margin: 0 20px;
+        font-weight: 200;
+        font-size: 40px;
+    }
+}
