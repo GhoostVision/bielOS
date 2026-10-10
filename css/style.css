@@ -168,4 +168,64 @@
   font-weight: 300;
 }
 
+.notas {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao-notas {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  margin: 5px;
+}
+.apresentacao-notas h2 {
+  margin: 0 20px;
+  font-weight: 200;
+  font-size: 40px;
+  color: black;
+}
+
+.box-notas {
+  gap: 10px;
+  margin: 0 10px;
+  display: flex;
+}
+
+.notas-quadrado {
+  border: 1px solid rgb(192, 192, 192);
+  width: 25%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materias {
+  width: 80%;
+}
+.materias p {
+  margin: 9px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  font-weight: 200;
+  color: black;
+}
+
+.box-nota {
+  width: 20%;
+  border-left: 1px solid rgb(192, 192, 192);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.box-nota span {
+  margin: 3px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  padding: 1px 10px;
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+@use "../utilites/colors.scss" as *;
+
+.notas{
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao-notas{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    border: 1px solid $cor-prata;
+    border-radius: 10px;
+    margin: 5px;
+
+    h2{
+        margin: 0 20px;
+        font-weight: 200;
+        font-size: 40px;
+        color: $cor-texto;
+    }
+}
+
+.box-notas{
+    gap: 10px;
+    margin: 0 10px;
+    display: flex;
+}
+
+.notas-quadrado{
+    border: 1px solid $cor-prata;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.materias{
+    width: 80%;
+    p{
+        margin: 9px;
+        border-bottom: 1px solid $cor-prata;
+        font-weight: 200;
+        color: $cor-texto;
+    }
+}
+
+.box-nota{
+    width: 20%;
+    border-left: 1px solid $cor-prata;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    span{
+        margin:  3px;
+        border: 1px solid $cor-prata;
+        border-radius: 10px;
+        padding: 1px 10px;
+        color: $cor-texto;
+    }
+}
