@@ -1,0 +1,14 @@
+@use "../utilites/colors.scss" as *;
+
+.box_gastos{
+    position: fixed;
+    z-index: 999;
+    display: none;
+    background: $cor-principal;
+    border: 1px solid $cor-prata;
+    border-radius: 10px;
+    height: 20%;
+    width: 76%;
+    top: 30%;
+    left: 20%;
+}

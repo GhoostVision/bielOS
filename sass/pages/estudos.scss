@@ -5,6 +5,16 @@
     flex-direction: column;
 }
 
+.teste{
+    height: 50px;
+    background-color: black;
+    width: 400px;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+}
+
 .apresetacao-estduos{
     width: 99%;
     height: 15vh;

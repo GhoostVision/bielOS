@@ -1,0 +1,69 @@
+@use "../utilites/colors.scss" as *;
+
+.carteira{
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao_carteira{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    border: 1px solid $cor-prata;
+    border-radius: 10px;
+    margin: 5px;
+
+    .text_apresentacao_carteira{
+
+        width: 63%;
+
+        h2{
+           margin: 0 20px;
+           font-weight: 200;
+           font-size: 40px;
+           color: $cor-texto;
+        }
+
+        p{
+            margin: 0 20px;
+            font-weight: 200;
+            font-size: 12px;
+            color: $cor-texto;
+        }
+    }
+
+    .button_apresentacao_carteira{
+
+        width: 37%;
+        button{
+            padding: 6px 10px;
+            background: $cor-secundaria;
+            border: none;
+            color:white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+}
+
+.box-card-financeiro{
+    display: flex;
+    height: 10hv;
+
+    .card-financeiro{
+        border: 1px solid $cor-prata;
+        width: 25%;
+        margin: 0 5px;
+        border-radius: 10px;
+
+        span{
+            font-weight: 800;
+            font-size: 25px;
+            margin: 0 15px;
+        }
+        p{
+            font-weight: 200;
+            margin: 0 10px 5px 15px;
+        }
+    }
+}
