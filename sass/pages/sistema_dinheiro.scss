@@ -74,10 +74,12 @@
     height: 55vh;
 
     .cards-historico-carteira{
-        width: 25%;
+        width: 33%;
         border: 1px solid $cor-prata;
         margin: 0 5px;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
 
         h2{
             font-size: 20px;
@@ -85,6 +87,80 @@
             font-weight: 800;
         }
 
-        p
+        .info-historico{
+            display: flex;
+            border: 1px solid $cor-prata;
+            margin: 0 5px;
+            border-radius: 5px;
+            padding: 2px 0;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                font-size: 14px;
+                margin: 0;
+                padding: 0 8px;
+            }
+
+            .valor-carteira{
+                font-weight: 700;
+                color: red;
+            }
+
+            .descrisao-carteira{
+                font-weight: 600;
+            }
+
+            .categoria-carteira{
+                font-weight: 600;
+            }
+
+            button{
+                background: $cor-secundaria;
+                border: none;
+                color:white;
+                padding: 0 8px;
+                border-radius: 5px;
+                margin: 0 2px;
+            }
+        }
+
+        
+    }
+}
+
+.campo-digitar-entrada-carteira{
+    border: 1px solid $cor-prata;
+    border-radius: 5px;
+    height: 10vh;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+
+    .input-entrada{
+        width: 60%;
+        height: 30px;
+        margin: 0 10px;
+        padding: 0 5px;
+        border-radius: 5px;
+        border: 1px solid $cor-prata;
+    }
+
+    .select-entrada{
+        width: 19%;
+        height: 30px;
+        margin: 0 10px;
+        text-align: center;
+        border-radius: 5px;
+        background: $cor-principal;
+        border: 1px solid $cor-prata;
+    }
+
+    .button-entrada{
+        background-color: $cor-secundaria;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 }
