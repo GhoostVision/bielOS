@@ -67,3 +67,24 @@
         }
     }
 }
+
+.box-historico-carteira{
+    display: flex;
+    margin: 5px;
+    height: 55vh;
+
+    .cards-historico-carteira{
+        width: 25%;
+        border: 1px solid $cor-prata;
+        margin: 0 5px;
+        border-radius: 10px;
+
+        h2{
+            font-size: 20px;
+            margin: 5px 10px;
+            font-weight: 800;
+        }
+
+        p
+    }
+}
