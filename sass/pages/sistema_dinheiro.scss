@@ -1,7 +1,7 @@
 @use "../utilites/colors.scss" as *;
 
 .carteira{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -172,7 +172,7 @@
     border-radius: 5px;
     height: 10vh;
     margin: 0 10px;
-    display: flex;
+    display: none;
     align-items: center;
 
     .input-gasto{

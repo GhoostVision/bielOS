@@ -122,3 +122,47 @@ function enviar_gasto(){
     }
     
 }
+
+//abrir e fechar abas sistemas
+var aba_button_entrada = document.getElementById(`aba_entrada`)
+var aba_button_gastos = document.getElementById(`aba_gasto`)
+
+function abrir_ganhos(){
+    aba_button_entrada.style.display = `flex`
+    aba_button_gastos.style.display = `none`
+}
+
+function abrir_despesas(){
+    aba_button_entrada.style.display = `none`
+    aba_button_gastos.style.display = `flex`
+}
+
+var aba_carteira = document.getElementById(`page_carteira`)
+var aba_inicio = document.getElementById(`page_inicio`)
+var aba_estudo = document.getElementById(`page_estudo`)
+var aba_notas = document.getElementById(`page_notas`)
+
+function abrir_inicio() {
+    aba_inicio.style.display = `flex`
+    aba_estudo.style.display = `none`
+    aba_notas.style.display = `none`
+    aba_carteira.style.display = `none`
+}
+function abrir_carteira() {
+    aba_inicio.style.display = `none`
+    aba_estudo.style.display = `none`
+    aba_notas.style.display = `none`
+    aba_carteira.style.display = `flex`
+}
+function abrir_notas() {
+    aba_inicio.style.display = `none`
+    aba_estudo.style.display = `none`
+    aba_notas.style.display = `flex`
+    aba_carteira.style.display = `none`
+}
+function abrir_estudo() {
+    aba_inicio.style.display = `none`
+    aba_estudo.style.display = `flex`
+    aba_notas.style.display = `none`
+    aba_carteira.style.display = `none`
+}

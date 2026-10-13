@@ -17,12 +17,12 @@
           <div class="barra_lateral">
             <h1>BielOG</h1>
             <ul>
-              <li><button>Inicio</button></li>
-              <li><button>Estudos</button></li>
+              <li><button onclick="abrir_inicio()">Inicio</button></li>
+              <li><button onclick="abrir_estudo()">Estudos</button></li>
               <li><button>Projetos</button></li>
-              <li><button>Notas</button></li>
+              <li><button onclick="abrir_notas()">Notas</button></li>
               <li><button>Lista de desejo</button></li>
-              <li><button>Carteira</button></li>
+              <li><button onclick="abrir_carteira()">Carteira</button></li>
             </ul>
           </div>
 
@@ -30,7 +30,7 @@
         <div class="col-10 tamanho">
           <div class="painel_principal">
 
-            <div class="inicio" id="paga_inicio"> <!--Pagina de inicio-->
+            <div class="inicio" id="page_inicio"> <!--Pagina de inicio-->
               <div class="inicio_apresentacao"> <!--box da apresentacao-->
                 <div class="apresentcao-info"> <!--Texto de bom dia e tals-->
                   <span id="sistema_de_bom_dia"></span>
@@ -220,8 +220,8 @@
             <p>Lembre-se, o seu presente faz o seu futuro</p>
           </div>
           <div class="button_apresentacao_carteira">
-            <button>+ Registrar ganhos</button>
-            <button>- Registar despesas</button>
+            <button onclick="abrir_ganhos()">+ Registrar ganhos</button>
+            <button onclick="abrir_despesas()">- Registar despesas</button>
           </div>
         </div>
         <div class="box-card-financeiro">
@@ -254,12 +254,24 @@
           </div>
           <div class="cards-historico-carteira">
             <h2>Entradas</h2>
+            <div class="info-historico">
+              <p class="valor-carteira">R$1000,00</p>
+              <p class="descrisao-carteira">programacao</p>
+              <p class="categoria-carteira">salario</p>
+              <button>X</button>
+            </div>
           </div>
           <div class="cards-historico-carteira">
             <h2>Investimentos</h2>
+            <div class="info-historico">
+              <p class="valor-carteira">R$150,00</p>
+              <p class="descrisao-carteira">inter</p>
+              <p class="categoria-carteira">Investimento</p>
+              <button>X</button>
+            </div>
           </div>
       </div>
-      <div class="campo-digitar-entrada-carteira">
+      <div class="campo-digitar-entrada-carteira" id="aba_entrada">
             <input type="text" class="input-entrada" placeholder="Digite a sua entrada">
             <input type="number" class="input-entrada" id="valor_entrada" placeholder="Digite o valor">
             <select name="categoria-entrada" id="" class="select-entrada">
@@ -271,7 +283,7 @@
             </select>
             <button class="button-entrada" onclick="enviar_entrada()">Registrar</button>
         </div>
-        <div class="campo-digitar-gasto-carteira">
+        <div class="campo-digitar-gasto-carteira" id="aba_gasto">
             <input type="text" class="input-gasto" placeholder="Digite o gasto">
             <input type="number" class="input-gasto" id="valor_gasto" placeholder="Digite o valor">
             <select name="categoria-gasto" id="" class="select-gasto">

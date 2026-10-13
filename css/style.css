@@ -38,7 +38,7 @@
 
 .inicio {
   width: 99%;
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -252,7 +252,7 @@
 }
 
 .carteira {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -401,7 +401,7 @@
   border-radius: 5px;
   height: 10vh;
   margin: 0 10px;
-  display: flex;
+  display: none;
   align-items: center;
 }
 .campo-digitar-gasto-carteira .input-gasto {
