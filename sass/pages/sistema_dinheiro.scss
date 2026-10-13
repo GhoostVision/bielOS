@@ -59,11 +59,7 @@
         span{
             font-weight: 800;
             font-size: 25px;
-            margin: 0 2px;
-        }
-
-        .caixa-span{
-            margin: 0 13px;
+            margin: 0 15px;
         }
 
         p{
@@ -139,7 +135,7 @@
     border-radius: 5px;
     height: 10vh;
     margin: 0 10px;
-    display: none;
+    display: flex;
     align-items: center;
 
     .input-entrada{

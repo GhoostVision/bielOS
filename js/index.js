@@ -94,22 +94,31 @@ function enviar_entrada(){ //entrada de valores
     var valor_entrada = Number(document.getElementById(`valor_entrada`).value)
     saldo += valor_entrada
     total += valor_entrada
-    saldo_html.innerText = saldo 
-    total_html.innerText = total
+    saldo_html.innerText = saldo.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})
+    total_html.innerText = total.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})
 
-    if(saldo > 0 || total > 0 || investimento > 0){
+    if(saldo > 0){
         saldo_html.style.color = `green`
+    }
+    if(total > 0){
+        total_html.style.color = `green`
     }
 }
 
 function enviar_gasto(){
     var valor_gasto = Number(document.getElementById(`valor_gasto`).value)
     gasto += valor_gasto
+    saldo -= valor_gasto
     total -= valor_gasto
-    gasto_html.innerText = gasto
-    saldo_html.innerText = total
+    gasto_html.innerText = gasto.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})
+    saldo_html.innerText = saldo.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})
+    total_html.innerText = total.toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'})
 
-    if(total < 0){
+    if(saldo < 0){
         saldo_html.style.color = `red`
     }
+    if(total < 0){
+        total_html.style.color = `red`
+    }
+    
 }
