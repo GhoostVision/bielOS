@@ -304,7 +304,10 @@
 .box-card-financeiro .card-financeiro span {
   font-weight: 800;
   font-size: 25px;
-  margin: 0 15px;
+  margin: 0 2px;
+}
+.box-card-financeiro .card-financeiro .caixa-span {
+  margin: 0 13px;
 }
 .box-card-financeiro .card-financeiro p {
   font-weight: 200;

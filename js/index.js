@@ -77,3 +77,39 @@ if(horas < 6){
 }else{
     sistema_de_bom_dia.innerText = `Boa noite...`
 }
+
+//carteira sistemas
+
+var total_html = document.getElementById(`total_carteira`)
+var saldo_html = document.getElementById(`saldo_atual`)
+var investimento_html = document.getElementById(`investimento_total`)
+var gasto_html = document.getElementById(`gasto_total`)
+
+var total = 0
+var saldo = 0
+var investimento = 0
+var gasto = 0
+
+function enviar_entrada(){ //entrada de valores
+    var valor_entrada = Number(document.getElementById(`valor_entrada`).value)
+    saldo += valor_entrada
+    total += valor_entrada
+    saldo_html.innerText = saldo 
+    total_html.innerText = total
+
+    if(saldo > 0 || total > 0 || investimento > 0){
+        saldo_html.style.color = `green`
+    }
+}
+
+function enviar_gasto(){
+    var valor_gasto = Number(document.getElementById(`valor_gasto`).value)
+    gasto += valor_gasto
+    total -= valor_gasto
+    gasto_html.innerText = gasto
+    saldo_html.innerText = total
+
+    if(total < 0){
+        saldo_html.style.color = `red`
+    }
+}
