@@ -20,8 +20,9 @@
         padding: 0;
 
         li{
-            a{
-                text-decoration: none;
+            button{
+                border: none;
+                background: $cor-principal;
                 color:$cor-texto;
             }
         }

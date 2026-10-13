@@ -17,12 +17,12 @@
           <div class="barra_lateral">
             <h1>BielOG</h1>
             <ul>
-              <li><a href="">Inicio</a></li>
-              <li><a href="">Estudos</a></li>
-              <li><a href="">Projetos</a></li>
-              <li><a href="">Notas</a></li>
-              <li><a href="">Lista de desejo</a></li>
-              <li><a href="">Dinheiro</a></li>
+              <li><button>Inicio</button></li>
+              <li><button>Estudos</button></li>
+              <li><button>Projetos</button></li>
+              <li><button>Notas</button></li>
+              <li><button>Lista de desejo</button></li>
+              <li><button>Carteira</button></li>
             </ul>
           </div>
 
@@ -30,7 +30,7 @@
         <div class="col-10 tamanho">
           <div class="painel_principal">
 
-            <div class="inicio"> <!--Pagina de inicio-->
+            <div class="inicio" id="paga_inicio"> <!--Pagina de inicio-->
               <div class="inicio_apresentacao"> <!--box da apresentacao-->
                 <div class="apresentcao-info"> <!--Texto de bom dia e tals-->
                   <span id="sistema_de_bom_dia"></span>
@@ -44,7 +44,7 @@
             </div>
 
             <!--Estudos -->
-            <div class="estudos">
+            <div class="estudos" id="page_estudo">
               <div class="apresetacao-estduos">
                 <div class="texto-apresentcao">
                   <h2>Centra de estudos</h2>
@@ -85,7 +85,7 @@
               </div>
             </div>
 
-            <div class="notas">
+            <div class="notas" id="page_notas">
               <div class="apresentacao-notas">
                 <h2>Notas bimestre</h2>
               </div>
@@ -213,10 +213,7 @@
         </div>
       </div>
 
-      <div class="box_gastos">
-      </div>
-
-      <div class="carteira">
+      <div class="carteira" id="page_carteira">
         <div class="apresentacao_carteira">
           <div class="text_apresentacao_carteira">
             <h2>Sua carteira</h2>
@@ -229,19 +226,19 @@
         </div>
         <div class="box-card-financeiro">
           <div class="card-financeiro">
-            <span>R$1200</span>
+            <span>R$0</span>
             <p>Saldo atual</p>
           </div>
           <div class="card-financeiro">
-            <span>R$400</span>
+            <span>R$0</span>
             <p>Despesas</p>
           </div>
           <div class="card-financeiro">
-            <span>R$800</span>
+            <span>R$0</span>
             <p>Total investido</p>
           </div>
           <div class="card-financeiro">
-            <span>R$2000</span>
+            <span>R$0</span>
             <p>Total carteira</p>
           </div>
         </div>
@@ -264,6 +261,7 @@
       </div>
       <div class="campo-digitar-entrada-carteira">
             <input type="text" class="input-entrada" placeholder="Digite a sua entrada">
+            <input type="number" class="input-entrada" placeholder="Digite o valor">
             <select name="categoria-entrada" id="" class="select-entrada">
               <option value="freelancer">Freelancer</option>
               <option value="salario">Salário</option>
@@ -271,7 +269,19 @@
               <option value="mesada">Mesada</option>
               <option value="outros">Outros</option>
             </select>
-            <button class="button-entrada">Registrar entrada</button>
+            <button class="button-entrada">Registrar</button>
+        </div>
+        <div class="campo-digitar-gasto-carteira">
+            <input type="text" class="input-gasto" placeholder="Digite o gasto">
+            <input type="number" class="input-gasto" placeholder="Digite o valor">
+            <select name="categoria-gasto" id="" class="select-gasto">
+              <option value="alimentacao">Alimentação</option>
+              <option value="transporte">Transporte</option>
+              <option value="investimento">Investimento</option>
+              <option value="mesada">Mesada</option>
+              <option value="outros">Outros</option>
+            </select>
+            <button class="button-gasto">Registrar</button>
         </div>
     </div>
     </main>

@@ -134,13 +134,13 @@
     border-radius: 5px;
     height: 10vh;
     margin: 0 10px;
-    display: flex;
+    display: none;
     align-items: center;
 
     .input-entrada{
         width: 60%;
         height: 30px;
-        margin: 0 10px;
+        margin: 0 5px;
         padding: 0 5px;
         border-radius: 5px;
         border: 1px solid $cor-prata;
@@ -161,6 +161,44 @@
         color: white;
         border: none;
         padding: 5px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
+
+.campo-digitar-gasto-carteira{
+    border: 1px solid $cor-prata;
+    border-radius: 5px;
+    height: 10vh;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+
+    .input-gasto{
+        width: 60%;
+        height: 30px;
+        margin: 0 5px;
+        padding: 0 5px;
+        border-radius: 5px;
+        border: 1px solid $cor-prata;
+    }
+
+    .select-gasto{
+        width: 19%;
+        height: 30px;
+        margin: 0 10px;
+        text-align: center;
+        border-radius: 5px;
+        background: $cor-principal;
+        border: 1px solid $cor-prata;
+    }
+
+    .button-gasto{
+        background-color: $cor-secundaria;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin: 0 5px;
         border-radius: 5px;
     }
 }
