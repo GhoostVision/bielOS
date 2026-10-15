@@ -137,32 +137,44 @@ function abrir_despesas(){
     aba_button_gastos.style.display = `flex`
 }
 
-var aba_carteira = document.getElementById(`page_carteira`)
-var aba_inicio = document.getElementById(`page_inicio`)
-var aba_estudo = document.getElementById(`page_estudo`)
-var aba_notas = document.getElementById(`page_notas`)
+let aba_carteira = document.getElementById(`page_carteira`)
+let aba_inicio = document.getElementById(`page_inicio`)
+let aba_estudo = document.getElementById(`page_estudo`)
+let aba_notas = document.getElementById(`page_notas`)
+let aba_lista_de_desejo = document.getElementById(`page_lista-de-desejo`)
 
 function abrir_inicio() {
     aba_inicio.style.display = `flex`
     aba_estudo.style.display = `none`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `none`
+    aba_lista_de_desejo.style.display = `none`
 }
 function abrir_carteira() {
     aba_inicio.style.display = `none`
     aba_estudo.style.display = `none`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `flex`
+    aba_lista_de_desejo.style.display = `none`
 }
 function abrir_notas() {
     aba_inicio.style.display = `none`
     aba_estudo.style.display = `none`
     aba_notas.style.display = `flex`
     aba_carteira.style.display = `none`
+    aba_lista_de_desejo.style.display = `none`
 }
 function abrir_estudo() {
     aba_inicio.style.display = `none`
     aba_estudo.style.display = `flex`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `none`
+    aba_lista_de_desejo.style.display = `none`
+}
+function abrir_lista() {
+    aba_inicio.style.display = `none`
+    aba_estudo.style.display = `none`
+    aba_notas.style.display = `none`
+    aba_carteira.style.display = `none`
+    aba_lista_de_desejo.style.display = `flex`
 }

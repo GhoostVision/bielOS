@@ -1,0 +1,47 @@
+@use "../utilites/colors.scss" as *;
+
+.lista-de-desejo{
+    display: none;
+    flex-direction: column;
+}
+
+.apresentacao-lista-de-desejo{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    border: 1px solid $cor-prata;
+    border-radius: 10px;
+    margin: 5px;
+
+    .text-apresentacao-lista-de-desejo{
+
+        width: 80%;
+
+        h2{
+           margin: 0 20px;
+           font-weight: 200;
+           font-size: 40px;
+           color: $cor-texto;
+        }
+
+        p{
+            margin: 0 20px;
+            font-weight: 200;
+            font-size: 12px;
+            color: $cor-texto;
+        }
+    }
+
+    .button-apresentacao-lista-de-desejo{
+        width: 20%;
+
+        button{
+            padding: 6px 15px;
+            background: $cor-secundaria;
+            border: none;
+            color:white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+}
