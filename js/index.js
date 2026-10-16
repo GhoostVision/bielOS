@@ -126,12 +126,18 @@ function enviar_gasto(){
 //abrir e fechar abas sistemas
 var aba_button_entrada = document.getElementById(`aba_entrada`)
 var aba_button_gastos = document.getElementById(`aba_gasto`)
+let aba_frase_lista_de_desejo = document.getElementById(`aba-frase-lista-de-desejo`)
+let aba_button_adicionar_item = document.getElementById(`aba-box-lista-de-desejo`)
+
+function abrir_adicionar_item(){
+    aba_frase_lista_de_desejo.style.display = `none`
+    aba_button_adicionar_item.style.display = `flex`
+}
 
 function abrir_ganhos(){
     aba_button_entrada.style.display = `flex`
     aba_button_gastos.style.display = `none`
 }
-
 function abrir_despesas(){
     aba_button_entrada.style.display = `none`
     aba_button_gastos.style.display = `flex`
@@ -178,3 +184,4 @@ function abrir_lista() {
     aba_carteira.style.display = `none`
     aba_lista_de_desejo.style.display = `flex`
 }
+

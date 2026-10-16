@@ -2,7 +2,7 @@
 
 .inicio{
     width: 99%;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .inicio_apresentacao{
@@ -53,4 +53,12 @@
         font-weight: 200;
         color: $cor-texto;
     }
+}
+
+.box-infomacao-inicio{
+    display: flex;
+    height: 55vh;
+    border: 1px solid red;
+    margin: 5px;
+    width: 100%;
 }

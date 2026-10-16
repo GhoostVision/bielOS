@@ -38,7 +38,7 @@
 
 .inicio {
   width: 99%;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -85,6 +85,14 @@
 .apresentacao-tempo .data_inicio {
   font-weight: 200;
   color: black;
+}
+
+.box-infomacao-inicio {
+  display: flex;
+  height: 55vh;
+  border: 1px solid red;
+  margin: 5px;
+  width: 100%;
 }
 
 .estudos {
@@ -431,7 +439,7 @@
 }
 
 .lista-de-desejo {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -468,6 +476,106 @@
   color: white;
   text-align: center;
   border-radius: 5px;
+}
+
+.box-itens-desejo {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  height: 52vh;
+  margin: 5px;
+  display: flex;
+}
+.box-itens-desejo .iten-lista {
+  width: 200px;
+  height: 260px;
+  margin: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  display: none;
+  flex-direction: column;
+}
+.box-itens-desejo .iten-lista img {
+  width: 100%;
+  height: 150px;
+}
+.box-itens-desejo .iten-lista p {
+  margin: 0 5px;
+  font-weight: 600;
+}
+.box-itens-desejo .iten-lista span {
+  margin: 0 5px;
+  font-weight: 200;
+}
+.box-itens-desejo .iten-lista .buttons-itens-lista {
+  display: flex;
+  gap: 30px;
+  margin: 5px 5px;
+}
+.box-itens-desejo .iten-lista .buttons-itens-lista label {
+  font-weight: 200;
+}
+.box-itens-desejo .iten-lista .buttons-itens-lista label input {
+  margin: 0 3px;
+}
+.box-itens-desejo .iten-lista .buttons-itens-lista button {
+  padding: 1px 20px;
+  font-size: 15px;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.box-input-lista-de-desejo {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  display: none;
+  align-items: center;
+  height: 25vh;
+  margin: 5px;
+}
+.box-input-lista-de-desejo input {
+  width: 30%;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+}
+.box-input-lista-de-desejo select {
+  background: white;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.box-input-lista-de-desejo button {
+  padding: 5px;
+  width: 25%;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+
+.frase-lista-de-desejo {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  margin: 5px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.frase-lista-de-desejo h3 {
+  font-weight: 800;
+}
+.frase-lista-de-desejo p {
+  font-weight: 300;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
