@@ -38,7 +38,7 @@
 
 .inicio {
   width: 99%;
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -93,6 +93,26 @@
   border: 1px solid red;
   margin: 5px;
   width: 100%;
+}
+.box-infomacao-inicio .links-rapidos-sites {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  width: 30%;
+  height: 30vh;
+}
+.box-infomacao-inicio .links-rapidos-sites .sites-links {
+  display: flex;
+}
+.box-infomacao-inicio .links-rapidos-sites .sites-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 70px;
+  flex-shrink: 0;
+  text-decoration: none;
+  border: 1px solid rgb(192, 192, 192);
+  margin: 5px;
 }
 
 .estudos {
@@ -339,7 +359,7 @@
   font-weight: 800;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico {
-  display: flex;
+  display: none;
   border: 1px solid rgb(192, 192, 192);
   margin: 2px 5px;
   border-radius: 5px;
@@ -354,7 +374,6 @@
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .valor-carteira {
   font-weight: 700;
-  color: red;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .descrisao-carteira {
   font-weight: 600;
@@ -440,7 +459,7 @@
 }
 
 .lista-de-desejo {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -492,7 +511,7 @@
   height: 260px;
   margin: 10px;
   border: 1px solid rgb(192, 192, 192);
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .box-itens-desejo .iten-lista img {

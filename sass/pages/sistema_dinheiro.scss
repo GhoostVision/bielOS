@@ -90,7 +90,7 @@
         }
 
         .info-historico{
-            display: flex;
+            display: none;
             border: 1px solid $cor-prata;
             margin: 2px 5px;
             border-radius: 5px;
@@ -106,7 +106,6 @@
 
             .valor-carteira{
                 font-weight: 700;
-                color: red;
             }
 
             .descrisao-carteira{

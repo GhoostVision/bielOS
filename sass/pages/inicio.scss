@@ -2,7 +2,7 @@
 
 .inicio{
     width: 99%;
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 .inicio_apresentacao{
@@ -61,4 +61,31 @@
     border: 1px solid red;
     margin: 5px;
     width: 100%;
+
+    .links-rapidos-sites{
+        border: 1px solid $cor-prata;
+        border-radius: 5px;
+        width: 30%;
+        height: 30vh;
+
+        .sites-links{
+            
+            display: flex;
+
+             a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 88px;
+        height: 70px;
+        flex-shrink: 0;
+
+        text-decoration: none;
+        border: 1px solid $cor-prata;
+        margin: 5px;
+            }
+
+           
+        }
+    }
 }
