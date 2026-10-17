@@ -52,17 +52,18 @@
     height: 52vh;
     margin: 5px;
     display: flex;
+    overflow-x: auto;
 
      .iten-lista{
         width: 200px;
         height: 260px;
         margin: 10px;
         border: 1px solid $cor-prata;
-        display: none;
+        display: flex;
         flex-direction: column;
 
         img{
-                width: 100%;
+                width: 200px;
                 height: 150px;
             }
         p{

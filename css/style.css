@@ -331,6 +331,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
 }
 .box-historico-carteira .cards-historico-carteira h2 {
   font-size: 20px;
@@ -340,7 +341,7 @@
 .box-historico-carteira .cards-historico-carteira .info-historico {
   display: flex;
   border: 1px solid rgb(192, 192, 192);
-  margin: 0 5px;
+  margin: 2px 5px;
   border-radius: 5px;
   padding: 2px 0;
   align-items: center;
@@ -484,17 +485,18 @@
   height: 52vh;
   margin: 5px;
   display: flex;
+  overflow-x: auto;
 }
 .box-itens-desejo .iten-lista {
   width: 200px;
   height: 260px;
   margin: 10px;
   border: 1px solid rgb(192, 192, 192);
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 .box-itens-desejo .iten-lista img {
-  width: 100%;
+  width: 200px;
   height: 150px;
 }
 .box-itens-desejo .iten-lista p {
