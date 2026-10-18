@@ -17,7 +17,7 @@
             <ul>
               <li><button onclick="abrir_inicio()">Inicio</button></li>
               <li><button onclick="abrir_estudo()">Estudos</button></li>
-              <li><button>Projetos</button></li>
+              <li><button onclick="abrir_projetos()">Projetos</button></li>
               <li><button onclick="abrir_notas()">Notas</button></li>
               <li><button onclick="abrir_lista()">Lista de desejo</button></li>
               <li><button onclick="abrir_carteira()">Carteira</button></li>
@@ -324,7 +324,7 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWwfWh6zf4GGVfa-X5Wzcm6r7DVrLafyxdSquuwXOGw&s=10" alt="">
             <p>Nome</p>
             <span>tipo</span>
-            <p>50R$</p>
+            <span>50R$</span>
             <div class="buttons-itens-lista">
               <label for="comprado"><input type="checkbox" name="" id="comprado">Comprado</label>
             </div>
@@ -348,6 +348,35 @@
         <h3>Provérbios 16:9</h3>
         <p>“O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos.”</p>
       </div>
+    </div>
+
+    <div class="projetos" id="page_projeto">
+      <div class="apresentacao-projetos">
+        <div class="text-apresentacao-projetos">
+          <h2>Projetos</h2>
+        </div>
+        <div class="button-apresentacao-projetos">
+          <button>+ Adicionar projeto</button>
+        </div>
+      </div>
+      <div class="box-projetos">
+        <div class="card-projeto">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQX8TdGgagMDfUPY4uuA_9rruuPCx8BofDcpg3nmirYA&s=10" alt="">
+          <p>Nome do projeto</p>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio debitis voluptate facilis repudiandae autem earum voluptates cum, non quae doloremque, numquam facere nulla. Sed soluta voluptatem delectus architecto iusto.</span>
+          <button>Projeto finalizado</button>
+        </div>
+      </div>
+      <div class="box-input-projeto" id="aba-box-projeto">
+        <input type="text" name="" id="" placeholder="Digite o nome do projeto">
+        <input type="text" name="" id="" placeholder="Digite uma breve descrisao do projeto">
+        <input type="text" id="" placeholder="Digite a url da imagem">
+        <button>criar projetos</button>
+      </div>
+      <!-- <div class="frase-lista-de-desejo" id="aba-frase-lista-de-desejo">
+        <h3>Provérbios 16:9</h3>
+        <p>“O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos.”</p>
+      </div> -->
     </div>
     </main>
     <footer></footer>

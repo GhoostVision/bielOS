@@ -68,6 +68,7 @@ const saldo_html = document.getElementById(`saldo_atual`)
 const investimento_html = document.getElementById(`investimento_total`)
 const gasto_html = document.getElementById(`gasto_total`)
 
+//variaveis de carteira
 let total = 0
 let saldo = 0
 let investimento = 0
@@ -154,6 +155,7 @@ const aba_carteira = document.getElementById(`page_carteira`)
 const aba_inicio = document.getElementById(`page_inicio`)
 const aba_estudo = document.getElementById(`page_estudo`)
 const aba_notas = document.getElementById(`page_notas`)
+const aba_projetos = document.getElementById(`page_projeto`)
 const aba_lista_de_desejo = document.getElementById(`page_lista-de-desejo`)
 
 function abrir_inicio() {
@@ -162,10 +164,12 @@ function abrir_inicio() {
     aba_notas.style.display = `none`
     aba_carteira.style.display = `none`
     aba_lista_de_desejo.style.display = `none`
+    aba_projetos.style.display = `none`
 }
 
 function abrir_carteira() {
     aba_inicio.style.display = `none`
+    aba_projetos.style.display = `none`
     aba_estudo.style.display = `none`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `flex`
@@ -176,6 +180,7 @@ function abrir_notas() {
     aba_inicio.style.display = `none`
     aba_estudo.style.display = `none`
     aba_notas.style.display = `flex`
+    aba_projetos.style.display = `none`
     aba_carteira.style.display = `none`
     aba_lista_de_desejo.style.display = `none`
 }
@@ -185,6 +190,7 @@ function abrir_estudo() {
     aba_estudo.style.display = `flex`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `none`
+    aba_projetos.style.display = `none`
     aba_lista_de_desejo.style.display = `none`
 }
 
@@ -193,5 +199,15 @@ function abrir_lista() {
     aba_estudo.style.display = `none`
     aba_notas.style.display = `none`
     aba_carteira.style.display = `none`
+    aba_projetos.style.display = `none`
     aba_lista_de_desejo.style.display = `flex`
+}
+
+function abrir_projetos() {
+    aba_inicio.style.display = `none`
+    aba_estudo.style.display = `none`
+    aba_notas.style.display = `none`
+    aba_carteira.style.display = `none`
+    aba_projetos.style.display = `flex`
+    aba_lista_de_desejo.style.display = `none`
 }

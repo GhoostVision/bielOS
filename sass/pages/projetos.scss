@@ -1,0 +1,115 @@
+@use "../utilites/colors.scss" as *;
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+}
+
+.apresentacao-projetos{
+    border: 1px solid $cor-prata;
+    margin:5px;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+
+    .text-apresentacao-projetos{
+        width: 80%;
+
+        h2{
+            margin: 0 20px;
+            font-weight: 200;
+            font-size: 40px;
+            color: $cor-texto;
+        }   
+    }
+
+    .button-apresentacao-projetos{
+
+        button{
+            padding: 6px 10px;
+            background: $cor-secundaria;
+            border: none;
+            color:white;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+.box-projetos{
+    height: 65vh;
+    width: 100%;
+    border: 1px solid $cor-prata;
+    margin: 5px;
+    overflow-x: auto;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+
+    .card-projeto{
+        width: 250px;
+        height: 320px;
+        margin: 0 5px;
+        border: 1px solid $cor-prata;
+        
+        img{
+            width: 250px;
+            height: 150px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 5px;
+        }
+        span{
+            display: inline-block;
+            font-weight: 200;
+            margin: 5px 5px;
+            height: 75px;
+            width: 240px;
+            overflow: hidden;
+        }
+
+        button{
+            color:white;
+            background: $cor-secundaria;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.box-input-projeto{
+    
+    margin: 5px;
+    border: 1px solid $cor-prata;
+    height: 12vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+
+    input{
+        width: 27%;
+        height: 30px;
+        padding: 0 5px;
+        border-radius: 5px;
+        border: 1px solid $cor-prata;
+    }
+    
+    button{
+        background-color: $cor-secundaria;
+        color: white;
+        border: none;
+        padding: 4px 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
