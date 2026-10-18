@@ -219,3 +219,33 @@ function abrir_projetos() {
     aba_projetos.style.display = `flex`
     aba_lista_de_desejo.style.display = `none`
 }
+
+const caixa_projeto = document.getElementById(`box-projetos`)
+
+function addProjeto(){
+    const InputNomeProjeto = document.getElementById(`NomeProjeto`).value
+    const InputDescricaoProjeto = document.getElementById(`DescricaoProjeto`).value
+    const InputImagemProjeto = document.getElementById(`ImagemProjeto`).value
+
+    const novoItemProjeto = document.createElement("div");
+    novoItemProjeto.classList.add("card-projeto");
+
+    const imagemProjetoItem = document.createElement("img")
+    imagemProjetoItem.classList.add("img-projeto")
+    imagemProjetoItem.src = InputImagemProjeto
+
+    const nomeProjeto = document.createElement("p")
+    nomeProjeto.classList.add("nome-projeto")
+    nomeProjeto.innerText = InputNomeProjeto
+
+    const descrisaoProjeto = document.createElement("span")
+    descrisaoProjeto.classList.add("descrissao-projeto")
+    descrisaoProjeto.innerText = InputDescricaoProjeto
+
+    const buttonProjeto = document.createElement("button")
+    buttonProjeto.classList.add("button-projeto")
+    buttonProjeto.innerText = `Finalizar projeto`
+    
+    caixa_projeto.appendChild(novoItemProjeto)
+    novoItemProjeto.append(imagemProjetoItem, nomeProjeto, descrisaoProjeto, buttonProjeto)
+}

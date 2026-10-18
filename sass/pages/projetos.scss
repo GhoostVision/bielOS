@@ -56,16 +56,16 @@
         margin: 0 5px;
         border: 1px solid $cor-prata;
         
-        img{
-            width: 250px;
+        .img-projeto{
+            width: 249px;
             height: 150px;
         }
-        p{
+        .nome-projeto{
             font-size: 20px;
             font-weight: 600;
             margin: 5px;
         }
-        span{
+        .descrissao-projeto{
             display: inline-block;
             font-weight: 200;
             margin: 5px 5px;
@@ -74,7 +74,7 @@
             overflow: hidden;
         }
 
-        button{
+        .button-projeto{
             color:white;
             background: $cor-secundaria;
             border: none;
