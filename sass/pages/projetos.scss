@@ -91,7 +91,7 @@
     border: 1px solid $cor-prata;
     height: 12vh;
     border-radius: 5px;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 10px;
     justify-content: center;
@@ -111,5 +111,25 @@
         padding: 4px 10px;
         margin: 0 5px;
         border-radius: 5px;
+    }
+}
+
+.frase-projeto{
+    border: 1px solid $cor-prata;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    margin: 5px;
+    background:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    p{
+        font-weight: 200;
+        margin: 10px;
+        font-size: 30px;
     }
 }

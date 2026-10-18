@@ -134,7 +134,9 @@ function enviar_gasto() {
 const aba_button_entrada = document.getElementById(`aba_entrada`)
 const aba_button_gastos = document.getElementById(`aba_gasto`)
 const aba_frase_lista_de_desejo = document.getElementById(`aba-frase-lista-de-desejo`)
+const aba_frase_projetos = document.getElementById(`aba-frase-projeto`)
 const aba_button_adicionar_item = document.getElementById(`aba-box-lista-de-desejo`)
+const aba_button_adicionar_projeto = document.getElementById(`aba-box-projeto`)
 
 function abrir_adicionar_item() {
     aba_frase_lista_de_desejo.style.display = `none`
@@ -149,6 +151,12 @@ function abrir_ganhos() {
 function abrir_despesas() {
     aba_button_entrada.style.display = `none`
     aba_button_gastos.style.display = `flex`
+}
+
+function abrir_adicionar_projeto(){
+    aba_button_adicionar_projeto.style.display = `flex`
+    aba_frase_projetos.style.display = `none`
+
 }
 
 const aba_carteira = document.getElementById(`page_carteira`)

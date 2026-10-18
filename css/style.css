@@ -359,7 +359,7 @@
   font-weight: 800;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico {
-  display: none;
+  display: flex;
   border: 1px solid rgb(192, 192, 192);
   margin: 2px 5px;
   border-radius: 5px;
@@ -370,16 +370,19 @@
 .box-historico-carteira .cards-historico-carteira .info-historico p {
   font-size: 14px;
   margin: 0;
-  padding: 0 8px;
+  padding: 0 15px;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .valor-carteira {
   font-weight: 700;
+  width: 25%;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .descrisao-carteira {
   font-weight: 600;
+  width: 25%;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .categoria-carteira {
   font-weight: 600;
+  width: 35%;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico button {
   background: black;
@@ -388,6 +391,7 @@
   padding: 0 8px;
   border-radius: 5px;
   margin: 0 2px;
+  width: 15%;
 }
 
 .campo-digitar-entrada-carteira {
@@ -679,7 +683,7 @@
   border: 1px solid rgb(192, 192, 192);
   height: 12vh;
   border-radius: 5px;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
   justify-content: center;
@@ -698,6 +702,25 @@
   padding: 4px 10px;
   margin: 0 5px;
   border-radius: 5px;
+}
+
+.frase-projeto {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12vh;
+  margin: 5px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.frase-projeto p {
+  font-weight: 200;
+  margin: 10px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
