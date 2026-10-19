@@ -74,7 +74,7 @@ let saldo = 0
 let investimento = 0
 let gasto = 0
 
-const caixa_carteira = document.getElementById("caixa_carteira_entrada")
+const caixa_carteira_entrada = document.getElementById("caixa_carteira_entrada")
 
 function enviar_entrada() {
     const valor_entrada = Number(document.getElementById(`valor_entrada`).value)
@@ -119,13 +119,16 @@ function enviar_entrada() {
     buttonItemCarteira.classList.add("button_carteira")
     buttonItemCarteira.innerText = `X`
 
-    caixa_carteira.appendChild(novoItemCarteira)
+    caixa_carteira_entrada.appendChild(novoItemCarteira)
     novoItemCarteira.append(valorItemCarteira, descrisaoItemCarteira, buttonItemCarteira)
     
 }
 
+const caixa_carteira_gasto = document.getElementById("caixa_carteira_gasto")
+
 function enviar_gasto() {
     const valor_gasto = Number(document.getElementById(`valor_gasto`).value)
+    const descrisao_gasto = document.getElementById(`descrisao_gasto`).value
 
     gasto += valor_gasto
     saldo -= valor_gasto
@@ -153,6 +156,28 @@ function enviar_gasto() {
     if (total < 0) {
         total_html.style.color = `red`
     }
+
+    const novoItemCarteira = document.createElement("div")
+    novoItemCarteira.classList.add("info-historico")
+
+    const valorItemCarteira = document.createElement("p")
+    valorItemCarteira.classList.add("valor-carteira")
+    valorItemCarteira.innerText = valor_gasto.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    const descrisaoItemCarteira = document.createElement("p")
+    descrisaoItemCarteira.classList.add("descrisao-carteira")
+    descrisaoItemCarteira.innerText = descrisao_gasto
+
+    const buttonItemCarteira = document.createElement("button")
+    buttonItemCarteira.classList.add("button_carteira")
+    buttonItemCarteira.innerText = `X`
+
+    caixa_carteira_gasto.appendChild(novoItemCarteira)
+    novoItemCarteira.append(valorItemCarteira, descrisaoItemCarteira, buttonItemCarteira)
+    
 }
 
 // abrir e fechar abas

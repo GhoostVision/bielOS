@@ -255,7 +255,7 @@
           </div>
         </div>
         <div class="box-historico-carteira">
-          <div class="cards-historico-carteira" id="caixa_carteira_entrada">
+          <div class="cards-historico-carteira" id="caixa_carteira_gasto">
             <h2>Despesas</h2>
             <div class="info-historico">
               <p class="valor-carteira">222-</p>
@@ -263,7 +263,7 @@
               <button class="button_carteira">X</button>
             </div>
           </div>
-          <div class="cards-historico-carteira">
+          <div class="cards-historico-carteira" id="caixa_carteira_entrada">
             <h2>Entradas</h2>
             <div class="info-historico">
               <p class="valor-carteira"></p>
@@ -294,7 +294,7 @@
             <button class="button-entrada" onclick="enviar_entrada()">Registrar</button>
         </div>
         <div class="campo-digitar-gasto-carteira" id="aba_gasto">
-            <input type="text" class="input-gasto" placeholder="Digite o gasto">
+            <input type="text" class="input-gasto" id="descrisao_gasto" placeholder="Digite o gasto">
             <input type="number" class="input-gasto" id="valor_gasto" placeholder="Digite o valor">
             <select name="categoria-gasto" id="" class="select-gasto">
               <option value="alimentacao">Alimentação</option>
