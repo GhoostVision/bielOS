@@ -222,6 +222,8 @@ function abrir_projetos() {
 
 const caixa_projeto = document.getElementById(`box-projetos`)
 
+
+// adicionar projeto sistema
 function addProjeto(){
     const InputNomeProjeto = document.getElementById(`NomeProjeto`).value
     const InputDescricaoProjeto = document.getElementById(`DescricaoProjeto`).value
@@ -248,4 +250,40 @@ function addProjeto(){
     
     caixa_projeto.appendChild(novoItemProjeto)
     novoItemProjeto.append(imagemProjetoItem, nomeProjeto, descrisaoProjeto, buttonProjeto)
+}
+
+// adicionar item lista de desejo
+
+const caixa_lista_de_desejo = document.getElementById(`box-itens-desejo`)
+
+function addItemLIstaDeDesejo(){
+
+    const input_valor_lista_de_desejo = Number(document.getElementById(`input_valor_lista-de-desejo`).value)
+    const input_nome_lista_de_desejo = document.getElementById(`input_nome_lista-de-desejo`).value
+    const input_img_lista_de_desejo = document.getElementById(`input_img_lista-de-desejo`).value
+
+    const novoItemLista = document.createElement("div")
+    novoItemLista.classList.add("iten-lista")
+
+    const imagemItemLista = document.createElement("img")
+    imagemItemLista.classList.add("img-item-lista")
+    imagemItemLista.src = input_img_lista_de_desejo
+
+    const nomeItemLista = document.createElement("p")
+    nomeItemLista.classList.add("nome-item-lista")
+    nomeItemLista.innerText = input_nome_lista_de_desejo
+
+    const precoItemLista = document.createElement("span")
+    precoItemLista.classList.add("valor-item-lista")
+    precoItemLista.innerText = input_valor_lista_de_desejo.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    const buttonItemLIsta = document.createElement("button")
+    buttonItemLIsta.classList.add("button-item-lista")
+    buttonItemLIsta.innerText = "Comprado"
+
+    caixa_lista_de_desejo.appendChild(novoItemLista)
+    novoItemLista.append(imagemItemLista, nomeItemLista, precoItemLista, buttonItemLIsta)
 }

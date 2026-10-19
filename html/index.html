@@ -319,30 +319,19 @@
           <button onclick="abrir_adicionar_item()">+ Adicionar item</button>
         </div>
       </div>
-      <div class="box-itens-desejo">
+      <div class="box-itens-desejo" id="box-itens-desejo">
           <div class="iten-lista">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWwfWh6zf4GGVfa-X5Wzcm6r7DVrLafyxdSquuwXOGw&s=10" alt="">
-            <p>Nome</p>
-            <span>tipo</span>
-            <span>50R$</span>
-            <div class="buttons-itens-lista">
-              <label for="comprado"><input type="checkbox" name="" id="comprado">Comprado</label>
-            </div>
+            <img class="img-item-lista" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmWwfWh6zf4GGVfa-X5Wzcm6r7DVrLafyxdSquuwXOGw&s=10" alt="">
+            <p class="nome-item-lista">Nome</p>
+            <span class="valor-item-lista">50R$</span>
+            <button class="button-item-lista">Comprado</button>
           </div>
       </div>
       <div class="box-input-lista-de-desejo" id="aba-box-lista-de-desejo">
-        <input type="number" name="" id="" placeholder="Digite o valor">
-        <input type="text" name="" id="" placeholder="Digite o nome do item">
-        <input type="text" id="" placeholder="Digite a url da imagem">
-        <select name="" id="">
-          <option value="">isso ai</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-        <button>criar item</button>
+        <input type="number" name="" id="input_valor_lista-de-desejo" placeholder="Digite o valor">
+        <input type="text" name="" id="input_nome_lista-de-desejo" placeholder="Digite o nome do item">
+        <input type="text" id="input_img_lista-de-desejo" placeholder="Digite a url da imagem">
+        <button onclick="addItemLIstaDeDesejo()">criar item</button>
       </div>
       <div class="frase-lista-de-desejo" id="aba-frase-lista-de-desejo">
         <h3>Provérbios 16:9</h3>

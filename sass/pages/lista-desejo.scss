@@ -1,7 +1,7 @@
 @use "../utilites/colors.scss" as *;
 
 .lista-de-desejo{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -59,43 +59,33 @@
         height: 260px;
         margin: 10px;
         border: 1px solid $cor-prata;
-        display: none;
+        display: flex;
         flex-direction: column;
 
-        img{
-                width: 200px;
+        .img-item-lista{
+                width: 199px;
                 height: 150px;
             }
-        p{
+        .nome-item-lista{
             margin: 0 5px;
             font-weight: 600;
+            font-size: 20px;
         }
 
-        span{
-            margin: 0 5px;
-            font-weight: 200;
+        .valor-item-lista{
+            margin: 7px 5px;
+            font-weight: 300;
+            display: inline-block;
+            height: 40px;
         }
 
-        .buttons-itens-lista{
-            display: flex;
-            gap: 30px;
-            margin: 5px 5px;
-
-            label{
-                font-weight: 200;
-                input{
-                    margin: 0 3px;
-                }
-            }
-
-            button{
-                padding: 1px 20px;
-                font-size: 15px;
-                border: none;
-                background: $cor-secundaria;
-                color: white;
-
-            }
+        .button-item-lista{
+            background: $cor-secundaria;
+            border: none;
+            color: white;
+            margin: 5px;
+            padding: 2px;
+            border-radius: 5px;
         }
      }
 }
