@@ -280,7 +280,7 @@
 }
 
 .carteira {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -369,29 +369,25 @@
 }
 .box-historico-carteira .cards-historico-carteira .info-historico p {
   font-size: 14px;
-  margin: 0;
-  padding: 0 15px;
+  margin: 0px;
+  padding: 0 10px;
+  overflow: hidden;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .valor-carteira {
   font-weight: 700;
-  width: 25%;
+  width: 40%;
 }
 .box-historico-carteira .cards-historico-carteira .info-historico .descrisao-carteira {
   font-weight: 600;
-  width: 25%;
+  width: 40%;
 }
-.box-historico-carteira .cards-historico-carteira .info-historico .categoria-carteira {
-  font-weight: 600;
-  width: 35%;
-}
-.box-historico-carteira .cards-historico-carteira .info-historico button {
+.box-historico-carteira .cards-historico-carteira .info-historico .button_carteira {
   background: black;
   border: none;
   color: white;
-  padding: 0 8px;
   border-radius: 5px;
-  margin: 0 2px;
-  width: 15%;
+  margin: 0 2px 0px 8px;
+  width: 10%;
 }
 
 .campo-digitar-entrada-carteira {
@@ -463,7 +459,7 @@
 }
 
 .lista-de-desejo {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 

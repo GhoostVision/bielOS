@@ -74,8 +74,11 @@ let saldo = 0
 let investimento = 0
 let gasto = 0
 
+const caixa_carteira = document.getElementById("caixa_carteira_entrada")
+
 function enviar_entrada() {
     const valor_entrada = Number(document.getElementById(`valor_entrada`).value)
+    const descrisao_entrada = document.getElementById(`descrisao_entrada`).value
 
     saldo += valor_entrada
     total += valor_entrada
@@ -97,6 +100,28 @@ function enviar_entrada() {
     if (total > 0) {
         total_html.style.color = `green`
     }
+
+    const novoItemCarteira = document.createElement("div")
+    novoItemCarteira.classList.add("info-historico")
+
+    const valorItemCarteira = document.createElement("p")
+    valorItemCarteira.classList.add("valor-carteira")
+    valorItemCarteira.innerText = valor_entrada.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    const descrisaoItemCarteira = document.createElement("p")
+    descrisaoItemCarteira.classList.add("descrisao-carteira")
+    descrisaoItemCarteira.innerText = descrisao_entrada
+
+    const buttonItemCarteira = document.createElement("button")
+    buttonItemCarteira.classList.add("button_carteira")
+    buttonItemCarteira.innerText = `X`
+
+    caixa_carteira.appendChild(novoItemCarteira)
+    novoItemCarteira.append(valorItemCarteira, descrisaoItemCarteira, buttonItemCarteira)
+    
 }
 
 function enviar_gasto() {

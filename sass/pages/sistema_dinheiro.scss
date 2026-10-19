@@ -1,7 +1,7 @@
 @use "../utilites/colors.scss" as *;
 
 .carteira{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -100,33 +100,30 @@
 
             p{
                 font-size: 14px;
-                margin: 0;
-                padding: 0 15px;
+                margin: 0px;
+                padding: 0 10px;
+                overflow: hidden;
             }
 
             .valor-carteira{
                 font-weight: 700;
-                width: 25%;
+                width: 40%;
+                
             }
 
             .descrisao-carteira{
                 font-weight: 600;
-                width: 25%;
+                width: 40%;
             }
 
-            .categoria-carteira{
-                font-weight: 600;
-                width: 35%;
-            }
 
-            button{
+            .button_carteira{
                 background: $cor-secundaria;
                 border: none;
                 color:white;
-                padding: 0 8px;
                 border-radius: 5px;
-                margin: 0 2px;
-                width: 15%;
+                margin: 0 2px 0px 8px;
+                width: 10%;
             }
         }
 
