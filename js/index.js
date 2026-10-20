@@ -95,10 +95,14 @@ function enviar_entrada() {
 
     if (saldo > 0) {
         saldo_html.style.color = `green`
+    }else{
+        saldo_html.style.color = `red`
     }
 
     if (total > 0) {
         total_html.style.color = `green`
+    }else{
+        saldo_html.style.color = `red`
     }
 
     const novoItemCarteira = document.createElement("div")
@@ -110,14 +114,32 @@ function enviar_entrada() {
         style: `currency`,
         currency: `BRL`
     })
+    valorItemCarteira.style.color = `green`
 
     const descrisaoItemCarteira = document.createElement("p")
     descrisaoItemCarteira.classList.add("descrisao-carteira")
     descrisaoItemCarteira.innerText = descrisao_entrada
 
     const buttonItemCarteira = document.createElement("button")
+    buttonItemCarteira.addEventListener("click", deletar_item)
     buttonItemCarteira.classList.add("button_carteira")
     buttonItemCarteira.innerText = `X`
+
+    function deletar_item(){
+        novoItemCarteira.remove()
+        saldo -= valor_entrada
+        total -= valor_entrada
+
+        saldo_html.innerText = saldo.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+        })
+        total_html.innerText = total.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+        })
+
+    }
 
     caixa_carteira_entrada.appendChild(novoItemCarteira)
     novoItemCarteira.append(valorItemCarteira, descrisaoItemCarteira, buttonItemCarteira)
@@ -151,10 +173,14 @@ function enviar_gasto() {
 
     if (saldo < 0) {
         saldo_html.style.color = `red`
+    }else{
+        saldo_html.style.color = `green`
     }
 
     if (total < 0) {
         total_html.style.color = `red`
+    }else{
+        saldo_html.style.color = `green`
     }
 
     const novoItemCarteira = document.createElement("div")
@@ -166,6 +192,7 @@ function enviar_gasto() {
         style: `currency`,
         currency: `BRL`
     })
+    valorItemCarteira.style.color = `red`
 
     const descrisaoItemCarteira = document.createElement("p")
     descrisaoItemCarteira.classList.add("descrisao-carteira")
@@ -173,7 +200,29 @@ function enviar_gasto() {
 
     const buttonItemCarteira = document.createElement("button")
     buttonItemCarteira.classList.add("button_carteira")
+    buttonItemCarteira.addEventListener("click", deletar_item)
     buttonItemCarteira.innerText = `X`
+
+    function deletar_item(){
+        novoItemCarteira.remove()
+
+        saldo += valor_gasto
+        total += valor_gasto
+        gasto -= valor_gasto
+
+        saldo_html.innerText = saldo.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+        })
+        total_html.innerText = total.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+        })
+        gasto_html.innerText = gasto.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+        })
+    }
 
     caixa_carteira_gasto.appendChild(novoItemCarteira)
     novoItemCarteira.append(valorItemCarteira, descrisaoItemCarteira, buttonItemCarteira)
@@ -295,8 +344,13 @@ function addProjeto(){
     descrisaoProjeto.innerText = InputDescricaoProjeto
 
     const buttonProjeto = document.createElement("button")
+    buttonProjeto.addEventListener("click", remover_item)
     buttonProjeto.classList.add("button-projeto")
     buttonProjeto.innerText = `Finalizar projeto`
+
+    function remover_item(){
+        novoItemProjeto.remove()
+    }
     
     caixa_projeto.appendChild(novoItemProjeto)
     novoItemProjeto.append(imagemProjetoItem, nomeProjeto, descrisaoProjeto, buttonProjeto)
@@ -332,7 +386,13 @@ function addItemLIstaDeDesejo(){
 
     const buttonItemLIsta = document.createElement("button")
     buttonItemLIsta.classList.add("button-item-lista")
+    buttonItemLIsta.addEventListener("click", remover_item)
     buttonItemLIsta.innerText = "Comprado"
+
+    function remover_item(){
+        novoItemLista.remove()
+
+    }
 
     caixa_lista_de_desejo.appendChild(novoItemLista)
     novoItemLista.append(imagemItemLista, nomeItemLista, precoItemLista, buttonItemLIsta)
