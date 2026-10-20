@@ -116,7 +116,7 @@
 }
 
 .estudos {
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -192,18 +192,67 @@
   display: flex;
   justify-content: center;
   margin: 0 5px;
-  gap: 20px;
+  gap: 10px;
 }
 .box-tarefas-estudos .card-lista-estudo {
   width: 100%;
-  height: 63vh;
-  border-radius: 10px;
-  border: 1px solid rgb(192, 192, 192);
+  height: 53vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 5px;
+  overflow-y: auto;
 }
 .box-tarefas-estudos .card-lista-estudo h2 {
   font-weight: 300;
+}
+.box-tarefas-estudos .card-lista-estudo .tarefa-estudo {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 1px 0;
+  width: 97%;
+  height: 30px;
+  margin: 3px 0;
+  border-radius: 5px;
+}
+.box-tarefas-estudos .card-lista-estudo .tarefa-estudo p {
+  width: 80%;
+  margin: 2px 5px;
+}
+.box-tarefas-estudos .card-lista-estudo .tarefa-estudo button {
+  width: 20%;
+  border: none;
+  color: white;
+  background: black;
+  margin: 2px;
+  border-radius: 5px;
+}
+.box-tarefas-estudos .box-card-lista-de-estduo {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+}
+.box-tarefas-estudos .box-input-card-lista-de-estudo {
+  padding: 5px 0;
+  margin: 5px 0;
+  display: flex;
+  border-top: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.box-tarefas-estudos .box-input-card-lista-de-estudo button {
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 6px;
+  margin: 0 4px;
+}
+.box-tarefas-estudos .box-input-card-lista-de-estudo input {
+  width: 60%;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  padding: 3px 0;
 }
 
 .notas {
@@ -280,7 +329,7 @@
 }
 
 .carteira {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
