@@ -397,3 +397,94 @@ function addItemLIstaDeDesejo(){
     caixa_lista_de_desejo.appendChild(novoItemLista)
     novoItemLista.append(imagemItemLista, nomeItemLista, precoItemLista, buttonItemLIsta)
 }
+
+const box_tarefa_linguagem = document.getElementById(`box-tarefa-linguagens`);
+let linguagens = 0
+
+function enviar_tarefa_linguagens(){
+
+    const input_tarefas_linguagens = document.getElementById(`input_tarefas_linguagens`).value;
+    const contador_linguagens = document.getElementById(`contador_linguagens`)
+  
+    const nova_tarefa = document.createElement("div");
+    nova_tarefa.classList.add("tarefa-estudo");
+
+    const text_tarefa = document.createElement("p");
+    text_tarefa.classList.add(`text-tarefa`);
+    text_tarefa.innerText = input_tarefas_linguagens;
+
+    const button_tarefa = document.createElement("button");
+    button_tarefa.classList.add(`button-tarefa`);
+    button_tarefa.addEventListener(`click`, concluir_tarefa)
+    button_tarefa.innerText = `x`;
+
+    function concluir_tarefa(){
+        nova_tarefa.remove();
+        linguagens = ++linguagens
+        contador_linguagens.innerText = String(linguagens)
+    }
+
+    box_tarefa_linguagem.appendChild(nova_tarefa);
+    nova_tarefa.append(text_tarefa, button_tarefa);
+}
+
+const box_tarefa_escola = document.getElementById(`box-tarefa-escola`);
+let licoes_escola = 0
+
+function enviar_tarefa_escola(){
+
+    const input_tarefas_escola = document.getElementById(`input_tarefas_escola`).value;
+    const contador_linguagens = document.getElementById(`contador_escola`)
+  
+    const nova_tarefa = document.createElement("div");
+    nova_tarefa.classList.add("tarefa-estudo");
+
+    const text_tarefa = document.createElement("p");
+    text_tarefa.classList.add(`text-tarefa`);
+    text_tarefa.innerText = input_tarefas_escola;
+
+    const button_tarefa = document.createElement("button");
+    button_tarefa.classList.add(`button-tarefa`);
+    button_tarefa.addEventListener(`click`, concluir_tarefa)
+    button_tarefa.innerText = `x`;
+
+    function concluir_tarefa(){
+        nova_tarefa.remove();
+        licoes_escola = ++licoes_escola
+        contador_linguagens.innerText = String(licoes_escola)
+    }
+
+    box_tarefa_escola.appendChild(nova_tarefa);
+    nova_tarefa.append(text_tarefa, button_tarefa);
+}
+
+const box_tarefa_interesse = document.getElementById(`box-tarefa-interesse`)
+let interesse = 0
+
+function enviar_tarefa_interesse(){
+
+    const inpu_tarefa_interesse = document.getElementById(`input_tarefas_interesse`).value
+    const contador_interesse = document.getElementById(`contador_interesse`)
+
+    const nova_tarefa = document.createElement("div")
+    nova_tarefa.classList.add(`tarefa-estudo`)
+
+    const text_tarefa = document.createElement("p")
+    text_tarefa.classList.add(`text-tarefa`)
+    text_tarefa.innerText = inpu_tarefa_interesse
+
+    const button_tarefa = document.createElement("button")
+    button_tarefa.classList.add('button-tarefa')
+    button_tarefa.innerText = `x`
+    button_tarefa.addEventListener("click", concluir_tarefa)
+
+    function concluir_tarefa(){
+        nova_tarefa.remove()
+        interesse = ++interesse
+
+        contador_interesse.innerText = interesse
+    }
+
+    box_tarefa_interesse.appendChild(nova_tarefa)
+    nova_tarefa.append(text_tarefa, button_tarefa)
+}

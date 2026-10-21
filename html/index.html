@@ -68,15 +68,15 @@
               </div>
               <div class="info-estudos">
                 <div class="card-info-estudos">
-                  <span>2</span>
+                  <span id="contador_linguagens">0</span>
                   <p>Licoes linguagem</p>
                 </div>
                 <div class="card-info-estudos">
-                  <span>4</span>
+                  <span id="contador_escola">0</span>
                   <p>Licoes escola</p>
                 </div>
                 <div class="card-info-estudos">
-                  <span>5</span>
+                  <span id="contador_interesse">0</span>
                   <p>Licoes topico de interesse</p>
                 </div>
                 <div class="card-info-estudos">
@@ -86,42 +86,30 @@
               </div>
               <div class="box-tarefas-estudos">
                 <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo">
+                <div class="card-lista-estudo" id="box-tarefa-linguagens">
                   <h2>Linguagens</h2>
-                  <div class="tarefa-estudo">
-                    <p>Tarefa</p>
-                    <button>x</button>
-                  </div>
                 </div>
                  <div class="box-input-card-lista-de-estudo">
-                  <input type="text">
-                  <button>Enviar tarefa</button>
+                  <input type="text" id="input_tarefas_linguagens" >
+                  <button onclick="enviar_tarefa_linguagens()">Enviar tarefa</button>
                  </div>
                 </div>
                 <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo">
+                <div class="card-lista-estudo" id="box-tarefa-escola">
                   <h2>Escola</h2>
-                  <div class="tarefa-estudo">
-                    <p>Tarefa</p>
-                    <button>x</button>
-                  </div>
                 </div>
                  <div class="box-input-card-lista-de-estudo">
-                  <input type="text">
-                  <button>Enviar tarefa</button>
+                  <input type="text" id="input_tarefas_escola">
+                  <button onclick="enviar_tarefa_escola()">Enviar tarefa</button>
                  </div>
                 </div>
                 <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo">
+                <div class="card-lista-estudo" id="box-tarefa-interesse">
                   <h2>Tópicos de interesse</h2>
-                  <div class="tarefa-estudo">
-                    <p>Tarefa</p>
-                    <button>x</button>
-                  </div>
                 </div>
                  <div class="box-input-card-lista-de-estudo">
-                  <input type="text">
-                  <button>Enviar tarefa</button>
+                  <input type="text" id="input_tarefas_interesse">
+                  <button onclick="enviar_tarefa_interesse()">Enviar tarefa</button>
                  </div>
                 </div>
               </div>
