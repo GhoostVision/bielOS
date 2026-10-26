@@ -1,14 +1,98 @@
 @use "../utilites/colors.scss" as *;
 
-//estduos animacoes
-.box-input-card-lista-de-estudo{
 
-    button{
-        transition: 0.5s;
+//inicio
+.sites-links{
+    a{
+        transition: 0.9s;
+
         &:hover{
-            background-color: $cor-principal;
+            transform: scale(1.08);
+        }
+    }
+
+}
+
+//estudos
+.card-info-estudos{
+    transition: 0.5s;
+
+    &:hover{
+        background: $cor-secundaria;
+        color: white;
+    }
+}
+
+.box-input-card-lista-de-estudo{
+    button{
+        transition: 0.8s;
+
+        &:hover{
+            background: $cor-principal;
             color: $cor-texto;
             border: 1px solid $cor-prata;
         }
+    }
+    
+}
+
+//carteira
+
+.button_apresentacao_carteira{
+
+    button{
+     transition: 0.8s;
+
+     &:hover{
+        background: $cor-principal;
+        color: $cor-texto;
+        border: 1px solid $cor-prata;
+     }
+    }
+}
+
+.button-gasto, .button-entrada{
+    transition: 0.8s;
+
+     &:hover{
+        background: $cor-principal;
+        color: $cor-texto;
+        border: 1px solid $cor-prata;
+     }
+}
+
+// lista de desejo
+
+.box-input-lista-de-desejo{
+    button{
+        transition: 0.8s;
+
+        &:hover{
+            transform: 1.05;
+            background: $cor-principal;
+            color: $cor-texto;
+            border: 1px solid $cor-prata;
+        }
+    }
+}
+
+.button-apresentacao-lista-de-desejo{
+       button{
+        transition: 0.8s;
+
+         &:hover{
+            transform: 1.05;
+            background: $cor-principal;
+            color: $cor-texto;
+            border: 1px solid $cor-prata;
+         }
+        } 
+}
+
+.iten-lista{
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.05);
     }
 }

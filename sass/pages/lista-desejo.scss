@@ -38,7 +38,7 @@
         button{
             padding: 6px 15px;
             background: $cor-secundaria;
-            border: none;
+            border: 1px solid black;
             color:white;
             text-align: center;
             border-radius: 5px;
@@ -118,7 +118,7 @@
         padding: 5px;
         width: 25%;
         margin: 0 5px;
-        border: none;
+        border: 1px solid black;
         border-radius: 5px;
         background: $cor-secundaria;
         color: white;

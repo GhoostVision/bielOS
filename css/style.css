@@ -89,7 +89,6 @@
 .box-infomacao-inicio {
   display: flex;
   height: 55vh;
-  border: 1px solid red;
   margin: 5px;
   width: 100%;
 }
@@ -108,10 +107,14 @@
   justify-content: center;
   width: 88px;
   height: 70px;
-  flex-shrink: 0;
   text-decoration: none;
   border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
   margin: 5px;
+}
+.box-infomacao-inicio .links-rapidos-sites .sites-links a i {
+  color: black;
+  font-size: 40px;
 }
 
 .estudos {
@@ -145,21 +148,6 @@
   margin: 0 20px;
   font-weight: 200;
   font-size: 40px;
-}
-.apresetacao-estduos .xp-estudo {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.apresetacao-estduos .xp-estudo span {
-  font-size: 35px;
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-.apresetacao-estduos .xp-estudo p {
-  font-weight: 200;
 }
 
 .info-estudos {
@@ -242,7 +230,7 @@
 .box-tarefas-estudos .box-input-card-lista-de-estudo button {
   color: white;
   background: black;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 3px 6px;
   margin: 0 4px;
@@ -365,6 +353,7 @@
   color: white;
   text-align: center;
   border-radius: 5px;
+  border: 1px solid black;
 }
 
 .box-card-financeiro {
@@ -466,7 +455,7 @@
 .campo-digitar-entrada-carteira .button-entrada {
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid black;
   padding: 5px 10px;
   margin: 0 5px;
   border-radius: 5px;
@@ -500,7 +489,7 @@
 .campo-digitar-gasto-carteira .button-gasto {
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid black;
   padding: 5px 10px;
   margin: 0 5px;
   border-radius: 5px;
@@ -540,7 +529,7 @@
 .apresentacao-lista-de-desejo .button-apresentacao-lista-de-desejo button {
   padding: 6px 15px;
   background: black;
-  border: none;
+  border: 1px solid black;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -612,7 +601,7 @@
   padding: 5px;
   width: 25%;
   margin: 0 5px;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   background: black;
   color: white;
@@ -760,13 +749,73 @@
   font-size: 30px;
 }
 
-.box-input-card-lista-de-estudo button {
+.sites-links a {
+  transition: 0.9s;
+}
+.sites-links a:hover {
+  transform: scale(1.08);
+}
+
+.card-info-estudos {
   transition: 0.5s;
 }
+.card-info-estudos:hover {
+  background: black;
+  color: white;
+}
+
+.box-input-card-lista-de-estudo button {
+  transition: 0.8s;
+}
 .box-input-card-lista-de-estudo button:hover {
-  background-color: white;
+  background: white;
   color: black;
   border: 1px solid rgb(192, 192, 192);
+}
+
+.button_apresentacao_carteira button {
+  transition: 0.8s;
+}
+.button_apresentacao_carteira button:hover {
+  background: white;
+  color: black;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.button-gasto, .button-entrada {
+  transition: 0.8s;
+}
+.button-gasto:hover, .button-entrada:hover {
+  background: white;
+  color: black;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.box-input-lista-de-desejo button {
+  transition: 0.8s;
+}
+.box-input-lista-de-desejo button:hover {
+  transform: 1.05;
+  background: white;
+  color: black;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.button-apresentacao-lista-de-desejo button {
+  transition: 0.8s;
+}
+.button-apresentacao-lista-de-desejo button:hover {
+  transform: 1.05;
+  background: white;
+  color: black;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.iten-lista {
+  transition: 0.5s;
+}
+.iten-lista:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

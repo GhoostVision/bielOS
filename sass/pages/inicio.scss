@@ -58,7 +58,6 @@
 .box-infomacao-inicio{
     display: flex;
     height: 55vh;
-    border: 1px solid red;
     margin: 5px;
     width: 100%;
 
@@ -72,17 +71,21 @@
             
             display: flex;
 
-             a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 88px;
-        height: 70px;
-        flex-shrink: 0;
+           a{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           width: 88px;
+           height: 70px;
+           text-decoration: none;
+           border: 1px solid $cor-prata;
+           border-radius: 5px;
+           margin: 5px;
 
-        text-decoration: none;
-        border: 1px solid $cor-prata;
-        margin: 5px;
+           i{
+            color: $cor-texto;
+            font-size: 40px;
+           }
             }
 
            
