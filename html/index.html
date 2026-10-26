@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>BielOS</title>
+    <title>BielOG</title>
   </head>
   <body>
     <header></header>
@@ -15,12 +15,12 @@
           <div class="barra_lateral">
             <h1>BielOG</h1>
             <ul>
-              <li><button onclick="abrir_inicio()">Inicio</button></li>
-              <li><button onclick="abrir_estudo()">Estudos</button></li>
-              <li><button onclick="abrir_projetos()">Projetos</button></li>
-              <li><button onclick="abrir_notas()">Notas</button></li>
-              <li><button onclick="abrir_lista()">Lista de desejo</button></li>
-              <li><button onclick="abrir_carteira()">Carteira</button></li>
+              <li><button onclick="abrir_inicio()"><i class="fa-solid fa-house" aria-hidden="true"></i> Início</button></li>
+              <li><button onclick="abrir_estudo()"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Estudos</button></li>
+              <li><button onclick="abrir_projetos()"><i class="fa-solid fa-code" aria-hidden="true"></i> Projetos</button></li>
+              <li><button onclick="abrir_notas()"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Notas</button></li>
+              <li><button onclick="abrir_lista()"><i class="fa-solid fa-heart" aria-hidden="true"></i> Lista de desejos</button></li>
+              <li><button onclick="abrir_carteira()"><i class="fa-solid fa-wallet" aria-hidden="true"></i> Carteira</button></li>
             </ul>
           </div>
 
@@ -28,104 +28,104 @@
         <div class="col-10 tamanho">
           <div class="painel_principal">
 
-            <div class="inicio" id="page_inicio"> <!--Pagina de inicio-->
-              <div class="inicio_apresentacao"> <!--box da apresentacao-->
-                <div class="apresentcao-info"> <!--Texto de bom dia e tals-->
+            <div class="inicio" id="page_inicio"> <!--Página inicial-->
+              <div class="inicio_apresentacao"> <!--Apresentação-->
+                <div class="apresentcao-info"> <!--Saudação-->
                   <span id="sistema_de_bom_dia"></span>
                   <h2>GABRIEL</h2>
                 </div>
-                <div class="apresentacao-tempo"> <!--Texto de tempo e tals-->
+                <div class="apresentacao-tempo"> <!--Horário e data-->
                   <span class="horas_inicio" id="sistema_hras_inicio"></span>
-                  <span class="data_inicio" id="data_inicio"><span id="dia_semana_inicio"></span>, dia <span id="dia_inicio"></span> de <span id="mes_inicio">a</span> <span id="ano_inicio"></span> </span>
+                  <span class="data_inicio" id="data_inicio"><span id="dia_semana_inicio"></span>, dia <span id="dia_inicio"></span> de <span id="mes_inicio">a</span> <span id="ano_inicio"></span></span>
                 </div>
               </div>
               <div class="box-infomacao-inicio">
                 <div class="links-rapidos-sites">
                   <div class="sites-links">
-                    <a href="">GitHub</a>
-                    <a href="">Pinterest</a>
-                    <a href="">Steam</a>
+                    <a href=""><i class="fa-brands fa-github" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa-brands fa-pinterest" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa-brands fa-steam" aria-hidden="true"></i> </a>
                   </div>
                   <div class="sites-links">
-                    <a href="">ChatGpt</a>
-                    <a href="">Playstion</a>
-                    <a href="">YouTube</a>
+                    <a href=""><i class="fa-solid fa-robot" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa-brands fa-playstation" aria-hidden="true"></i> </a>
+                    <a href=""><i class="fa-brands fa-youtube" aria-hidden="true"></i> </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--Estudos -->
+            <!-- Estudos -->
             <div class="estudos" id="page_estudo">
               <div class="apresetacao-estduos">
                 <div class="texto-apresentcao">
-                  <h2>Centra de estudos</h2>
+                  <h2><i class="fa-solid fa-book-open" aria-hidden="true"></i> Central de estudos</h2>
                 </div>
               </div>
               <div class="info-estudos">
                 <div class="card-info-estudos">
                   <span id="contador_linguagens">0</span>
-                  <p>Licoes linguagem</p>
+                  <p>Lições de linguagens</p>
                 </div>
                 <div class="card-info-estudos">
                   <span id="contador_escola">0</span>
-                  <p>Licoes escola</p>
+                  <p>Lições da escola</p>
                 </div>
                 <div class="card-info-estudos">
                   <span id="contador_interesse">0</span>
-                  <p>Licoes topico de interesse</p>
+                  <p>Lições de tópicos de interesse</p>
                 </div>
               </div>
               <div class="box-tarefas-estudos">
                 <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo" id="box-tarefa-linguagens">
-                  <h2>Linguagens</h2>
-                </div>
-                 <div class="box-input-card-lista-de-estudo">
-                  <input type="text" id="input_tarefas_linguagens" >
-                  <button onclick="enviar_tarefa_linguagens()">Enviar tarefa</button>
-                 </div>
-                </div>
-                <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo" id="box-tarefa-escola">
-                  <h2>Escola</h2>
-                </div>
-                 <div class="box-input-card-lista-de-estudo">
-                  <input type="text" id="input_tarefas_escola">
-                  <button onclick="enviar_tarefa_escola()">Enviar tarefa</button>
-                 </div>
+                  <div class="card-lista-estudo" id="box-tarefa-linguagens">
+                    <h2><i class="fa-solid fa-language" aria-hidden="true"></i> Linguagens</h2>
+                  </div>
+                  <div class="box-input-card-lista-de-estudo">
+                    <input type="text" id="input_tarefas_linguagens">
+                    <button onclick="enviar_tarefa_linguagens()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Adicionar</button>
+                  </div>
                 </div>
                 <div class="box-card-lista-de-estduo">
-                <div class="card-lista-estudo" id="box-tarefa-interesse">
-                  <h2>Tópicos de interesse</h2>
+                  <div class="card-lista-estudo" id="box-tarefa-escola">
+                    <h2><i class="fa-solid fa-school" aria-hidden="true"></i> Escola</h2>
+                  </div>
+                  <div class="box-input-card-lista-de-estudo">
+                    <input type="text" id="input_tarefas_escola">
+                    <button onclick="enviar_tarefa_escola()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Adicionar</button>
+                  </div>
                 </div>
-                 <div class="box-input-card-lista-de-estudo">
-                  <input type="text" id="input_tarefas_interesse">
-                  <button onclick="enviar_tarefa_interesse()">Enviar tarefa</button>
-                 </div>
+                <div class="box-card-lista-de-estduo">
+                  <div class="card-lista-estudo" id="box-tarefa-interesse">
+                    <h2><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Tópicos de interesse</h2>
+                  </div>
+                  <div class="box-input-card-lista-de-estudo">
+                    <input type="text" id="input_tarefas_interesse">
+                    <button onclick="enviar_tarefa_interesse()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Adicionar</button>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="notas" id="page_notas">
               <div class="apresentacao-notas">
-                <h2>Notas bimestre</h2>
+                <h2><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Notas do bimestre</h2>
               </div>
               <div class="box-notas">
                 <div class="notas-quadrado">
                   <div class="materias">
-                  <p>Matematica</p>
-                  <p>Portugues</p>
-                  <p>financeira</p>
-                  <p>Historia</p>
-                  <p>Geografia</p>
-                  <p>Sociologia</p>
-                  <p>Empredorismo</p>
-                  <p>Quimica</p>
-                  <p>Programacao</p>
-                  <p>Ingles</p>
-                  <p>Biologia</p>
-                  <p>Redacao</p>
+                    <p>Matemática</p>
+                    <p>Português</p>
+                    <p>Educação financeira</p>
+                    <p>História</p>
+                    <p>Geografia</p>
+                    <p>Sociologia</p>
+                    <p>Empreendedorismo</p>
+                    <p>Química</p>
+                    <p>Programação</p>
+                    <p>Inglês</p>
+                    <p>Biologia</p>
+                    <p>Redação</p>
                   </div>
                   <div class="box-nota">
                     <span>1</span>
@@ -144,18 +144,18 @@
                 </div>
                 <div class="notas-quadrado">
                   <div class="materias">
-                  <p>Matematica</p>
-                  <p>Portugues</p>
-                  <p>financeira</p>
-                  <p>Historia</p>
-                  <p>Geografia</p>
-                  <p>Sociologia</p>
-                  <p>Empredorismo</p>
-                  <p>Quimica</p>
-                  <p>Programacao</p>
-                  <p>Ingles</p>
-                  <p>Biologia</p>
-                  <p>Redacao</p>
+                    <p>Matemática</p>
+                    <p>Português</p>
+                    <p>Educação financeira</p>
+                    <p>História</p>
+                    <p>Geografia</p>
+                    <p>Sociologia</p>
+                    <p>Empreendedorismo</p>
+                    <p>Química</p>
+                    <p>Programação</p>
+                    <p>Inglês</p>
+                    <p>Biologia</p>
+                    <p>Redação</p>
                   </div>
                   <div class="box-nota">
                     <span>1</span>
@@ -171,167 +171,169 @@
                     <span>1</span>
                     <span>1</span>
                   </div>
+                </div>
+                <div class="notas-quadrado">
+                  <div class="materias">
+                    <p>Matemática</p>
+                    <p>Português</p>
+                    <p>Educação financeira</p>
+                    <p>História</p>
+                    <p>Geografia</p>
+                    <p>Sociologia</p>
+                    <p>Empreendedorismo</p>
+                    <p>Química</p>
+                    <p>Programação</p>
+                    <p>Inglês</p>
+                    <p>Biologia</p>
+                    <p>Redação</p>
+                  </div>
+                  <div class="box-nota">
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                  </div>
+                </div>
+                <div class="notas-quadrado">
+                  <div class="materias">
+                    <p>Matemática</p>
+                    <p>Português</p>
+                    <p>Educação financeira</p>
+                    <p>História</p>
+                    <p>Geografia</p>
+                    <p>Sociologia</p>
+                    <p>Empreendedorismo</p>
+                    <p>Química</p>
+                    <p>Programação</p>
+                    <p>Inglês</p>
+                    <p>Biologia</p>
+                    <p>Redação</p>
+                  </div>
+                  <div class="box-nota">
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                  </div>
+                </div>
               </div>
-              <div class="notas-quadrado">
-                  <div class="materias">
-                  <p>Matematica</p>
-                  <p>Portugues</p>
-                  <p>financeira</p>
-                  <p>Historia</p>
-                  <p>Geografia</p>
-                  <p>Sociologia</p>
-                  <p>Empredorismo</p>
-                  <p>Quimica</p>
-                  <p>Programacao</p>
-                  <p>Ingles</p>
-                  <p>Biologia</p>
-                  <p>Redacao</p>
-                  </div>
-                  <div class="box-nota">
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                  </div>
             </div>
-            <div class="notas-quadrado">
-                  <div class="materias">
-                  <p>Matematica</p>
-                  <p>Portugues</p>
-                  <p>financeira</p>
-                  <p>Historia</p>
-                  <p>Geografia</p>
-                  <p>Sociologia</p>
-                  <p>Empredorismo</p>
-                  <p>Quimica</p>
-                  <p>Programacao</p>
-                  <p>Ingles</p>
-                  <p>Biologia</p>
-                  <p>Redacao</p>
-                  </div>
-                  <div class="box-nota">
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                  </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="carteira" id="page_carteira">
-        <div class="apresentacao_carteira">
-          <div class="text_apresentacao_carteira">
-            <h2>Sua carteira</h2>
-            <p>Lembre-se, o seu presente faz o seu futuro</p>
-          </div>
-          <div class="button_apresentacao_carteira">
-            <button onclick="abrir_ganhos()">+ Registrar ganhos</button>
-            <button onclick="abrir_despesas()">- Registar despesas</button>
-          </div>
-        </div>
-        <div class="box-card-financeiro">
-          <div class="card-financeiro">
-            <span id="saldo_atual">R$ 0</span>
-            <p>Saldo atual</p>
-          </div>
-          <div class="card-financeiro">
-            <span id="gasto_total">R$ 0</span>
-            <p>Despesas</p>
-          </div>
-          <div class="card-financeiro">
-            <span id="investimento_total">R$ 0</span>
-            <p>Total investido</p>
-          </div>
-          <div class="card-financeiro">
-            <span id="total_carteira">R$ 0</span>
-            <p>Total carteira</p>
-          </div>
-        </div>
-        <div class="box-historico-carteira">
-          <div class="cards-historico-carteira" id="caixa_carteira_gasto">
-            <h2>Despesas</h2>
-          </div>
-          <div class="cards-historico-carteira" id="caixa_carteira_entrada">
-            <h2>Entradas</h2>
-          </div>
-          <div class="cards-historico-carteira">
-            <h2>Investimentos</h2>
-          </div>
-      </div>
-      <div class="campo-digitar-entrada-carteira" id="aba_entrada">
-            <input type="text" class="input-entrada" id="descrisao_entrada" placeholder="Digite cmo que voce ganhou o dinheiro">
-            <input type="number" class="input-entrada" id="valor_entrada" placeholder="Digite o valor">
-            <button class="button-entrada" onclick="enviar_entrada()">Registrar</button>
-        </div>
-        <div class="campo-digitar-gasto-carteira" id="aba_gasto">
-            <input type="text" class="input-gasto" id="descrisao_gasto" placeholder="Digite o gasto">
-            <input type="number" class="input-gasto" id="valor_gasto" placeholder="Digite o valor">
-            <button class="button-gasto" onclick="enviar_gasto()">Registrar</button>
-        </div>
-    </div>
+            <div class="carteira" id="page_carteira">
+              <div class="apresentacao_carteira">
+                <div class="text_apresentacao_carteira">
+                  <h2><i class="fa-solid fa-wallet" aria-hidden="true"></i> Sua carteira</h2>
+                  <p>Suas escolhas de hoje ajudam a construir o seu futuro.</p>
+                </div>
+                <div class="button_apresentacao_carteira">
+                  <button onclick="abrir_ganhos()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Registrar ganhos</button>
+                  <button onclick="abrir_despesas()"><i class="fa-solid fa-minus" aria-hidden="true"></i> Registrar despesas</button>
+                </div>
+              </div>
+              <div class="box-card-financeiro">
+                <div class="card-financeiro">
+                  <span id="saldo_atual">R$ 0</span>
+                  <p><i class="fa-solid fa-coins" aria-hidden="true"></i> Saldo atual</p>
+                </div>
+                <div class="card-financeiro">
+                  <span id="gasto_total">R$ 0</span>
+                  <p><i class="fa-solid fa-money-bill-transfer" aria-hidden="true"></i> Despesas</p>
+                </div>
+                <div class="card-financeiro">
+                  <span id="investimento_total">R$ 0</span>
+                  <p><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Total investido</p>
+                </div>
+                <div class="card-financeiro">
+                  <span id="total_carteira">R$ 0</span>
+                  <p><i class="fa-solid fa-wallet" aria-hidden="true"></i> Total da carteira</p>
+                </div>
+              </div>
+              <div class="box-historico-carteira">
+                <div class="cards-historico-carteira" id="caixa_carteira_gasto">
+                  <h2><i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Despesas</h2>
+                </div>
+                <div class="cards-historico-carteira" id="caixa_carteira_entrada">
+                  <h2><i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Entradas</h2>
+                </div>
+                <div class="cards-historico-carteira">
+                  <h2><i class="fa-solid fa-chart-pie" aria-hidden="true"></i> Investimentos</h2>
+                </div>
+              </div>
+              <div class="campo-digitar-entrada-carteira" id="aba_entrada">
+                <input type="text" class="input-entrada" id="descrisao_entrada" placeholder="Descreva como você ganhou o dinheiro">
+                <input type="number" class="input-entrada" id="valor_entrada" placeholder="Digite o valor">
+                <button class="button-entrada" onclick="enviar_entrada()">Registrar</button>
+              </div>
+              <div class="campo-digitar-gasto-carteira" id="aba_gasto">
+                <input type="text" class="input-gasto" id="descrisao_gasto" placeholder="Descreva a despesa">
+                <input type="number" class="input-gasto" id="valor_gasto" placeholder="Digite o valor">
+                <button class="button-gasto" onclick="enviar_gasto()">Registrar</button>
+              </div>
+            </div>
 
-    <div class="lista-de-desejo" id="page_lista-de-desejo">
-      <div class="apresentacao-lista-de-desejo">
-        <div class="text-apresentacao-lista-de-desejo">
-          <h2>Lista de desejo</h2>
-          <p>Conquista que voce dejesa</p>
-        </div>
-        <div class="button-apresentacao-lista-de-desejo">
-          <button onclick="abrir_adicionar_item()">+ Adicionar item</button>
-        </div>
-      </div>
-      <div class="box-itens-desejo" id="box-itens-desejo">
-      </div>
-      <div class="box-input-lista-de-desejo" id="aba-box-lista-de-desejo">
-        <input type="number" name="" id="input_valor_lista-de-desejo" placeholder="Digite o valor">
-        <input type="text" name="" id="input_nome_lista-de-desejo" placeholder="Digite o nome do item">
-        <input type="text" id="input_img_lista-de-desejo" placeholder="Digite a url da imagem">
-        <button onclick="addItemLIstaDeDesejo()">criar item</button>
-      </div>
-      <div class="frase-lista-de-desejo" id="aba-frase-lista-de-desejo">
-        <h3>Provérbios 16:9</h3>
-        <p>“O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos.”</p>
-      </div>
-    </div>
+            <div class="lista-de-desejo" id="page_lista-de-desejo">
+              <div class="apresentacao-lista-de-desejo">
+                <div class="text-apresentacao-lista-de-desejo">
+                  <h2><i class="fa-solid fa-heart" aria-hidden="true"></i> Lista de desejos</h2>
+                  <p>Organize os itens que você deseja conquistar.</p>
+                </div>
+                <div class="button-apresentacao-lista-de-desejo">
+                  <button onclick="abrir_adicionar_item()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Adicionar item</button>
+                </div>
+              </div>
+              <div class="box-itens-desejo" id="box-itens-desejo">
+              </div>
+              <div class="box-input-lista-de-desejo" id="aba-box-lista-de-desejo">
+                <input type="number" name="" id="input_valor_lista-de-desejo" placeholder="Digite o valor">
+                <input type="text" name="" id="input_nome_lista-de-desejo" placeholder="Digite o nome do item">
+                <input type="text" id="input_img_lista-de-desejo" placeholder="Digite a URL da imagem">
+                <button onclick="addItemLIstaDeDesejo()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Criar item</button>
+              </div>
+              <div class="frase-lista-de-desejo" id="aba-frase-lista-de-desejo">
+                <h3>Provérbios 16:9</h3>
+                <p>“O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos.”</p>
+              </div>
+            </div>
 
-    <div class="projetos" id="page_projeto">
-      <div class="apresentacao-projetos">
-        <div class="text-apresentacao-projetos">
-          <h2>Projetos</h2>
+            <div class="projetos" id="page_projeto">
+              <div class="apresentacao-projetos">
+                <div class="text-apresentacao-projetos">
+                  <h2><i class="fa-solid fa-code" aria-hidden="true"></i> Projetos</h2>
+                </div>
+                <div class="button-apresentacao-projetos">
+                  <button onclick="abrir_adicionar_projeto()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Adicionar projeto</button>
+                </div>
+              </div>
+              <div class="box-projetos" id="box-projetos">
+              </div>
+              <div class="box-input-projeto" id="aba-box-projeto">
+                <input type="text" name="" id="NomeProjeto" placeholder="Digite o nome do projeto">
+                <input type="text" name="" id="DescricaoProjeto" placeholder="Digite a descrição do projeto">
+                <input type="text" id="ImagemProjeto" placeholder="Digite a URL da imagem">
+                <button onclick="addProjeto()"><i class="fa-solid fa-plus" aria-hidden="true"></i> Criar projeto</button>
+              </div>
+              <div class="frase-projeto" id="aba-frase-projeto">
+                <p>Cada projeto é um passo rumo ao extraordinário.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="button-apresentacao-projetos">
-          <button onclick="abrir_adicionar_projeto()">+ Adicionar projeto</button>
-        </div>
-      </div>
-      <div class="box-projetos" id="box-projetos">
-      </div>
-      <div class="box-input-projeto" id="aba-box-projeto">
-        <input type="text" name="" id="NomeProjeto" placeholder="Digite o nome do projeto">
-        <input type="text" name="" id="DescricaoProjeto" placeholder="Digite a descrisao do projeto">
-        <input type="text" id="ImagemProjeto" placeholder="Digite a url da imagem">
-        <button onclick="addProjeto()">criar projetos</button>
-      </div>
-      <div class="frase-projeto" id="aba-frase-projeto">
-        <p>Cada projeto é um passo rumo ao extraordinário.</p>
-      </div>
-    </div>
     </main>
     <footer></footer>
     <script src="../js/index.js"></script>

@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif !important;
 }
 
 .barra_lateral {
@@ -116,7 +115,7 @@
 }
 
 .estudos {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -759,6 +758,15 @@
   font-weight: 200;
   margin: 10px;
   font-size: 30px;
+}
+
+.box-input-card-lista-de-estudo button {
+  transition: 0.5s;
+}
+.box-input-card-lista-de-estudo button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(192, 192, 192);
 }
 
 /*# sourceMappingURL=style.css.map */

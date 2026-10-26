@@ -1,0 +1,14 @@
+@use "../utilites/colors.scss" as *;
+
+//estduos animacoes
+.box-input-card-lista-de-estudo{
+
+    button{
+        transition: 0.5s;
+        &:hover{
+            background-color: $cor-principal;
+            color: $cor-texto;
+            border: 1px solid $cor-prata;
+        }
+    }
+}
