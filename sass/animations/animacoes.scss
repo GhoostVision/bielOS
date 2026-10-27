@@ -13,6 +13,18 @@
 
 }
 
+//barra inicio 
+
+.barra_lateral{
+    button{
+        transition: 0.8s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
 //estudos
 .card-info-estudos{
     transition: 0.5s;
@@ -95,4 +107,40 @@
     &:hover{
         transform: scale(1.05);
     }
+}
+
+//PROJETOS
+
+.button-apresentacao-projetos{
+        button{
+          transition: 0.8s;
+
+         &:hover{
+            transform: 1.05;
+            background: $cor-principal;
+            color: $cor-texto;
+            border: 1px solid $cor-prata;
+         }
+        } 
+}
+
+.card-projeto{
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+.box-input-projeto{
+    button{
+        transition: 0.8s;
+
+        &:hover{
+            transform: 1.05;
+            background: $cor-principal;
+            color: $cor-texto;
+            border: 1px solid $cor-prata;
+        }
+    } 
 }
