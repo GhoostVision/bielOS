@@ -362,9 +362,17 @@ const caixa_lista_de_desejo = document.getElementById(`box-itens-desejo`)
 
 function addItemLIstaDeDesejo(){
 
-    const input_valor_lista_de_desejo = Number(document.getElementById(`input_valor_lista-de-desejo`).value)
+    const tela_de_aviso = document.getElementById(`tela_de_aviso`)
+    const input_valor = document.getElementById(`input_valor_lista-de-desejo`).value
     const input_nome_lista_de_desejo = document.getElementById(`input_nome_lista-de-desejo`).value
     const input_img_lista_de_desejo = document.getElementById(`input_img_lista-de-desejo`).value
+
+    if (input_img_lista_de_desejo.trim() === "" || input_nome_lista_de_desejo.trim() === "" || input_valor.trim() === "") {
+        tela_de_aviso.style.display = `flex`
+        return
+    }
+
+    const input_valor_lista_de_desejo = Number(document.getElementById(`input_valor_lista-de-desejo`).value)
 
     const novoItemLista = document.createElement("div")
     novoItemLista.classList.add("iten-lista")
@@ -396,6 +404,10 @@ function addItemLIstaDeDesejo(){
 
     caixa_lista_de_desejo.appendChild(novoItemLista)
     novoItemLista.append(imagemItemLista, nomeItemLista, precoItemLista, buttonItemLIsta)
+}
+
+function fechar_aviso(){
+        tela_de_aviso.style.display = `none`
 }
 
 const box_tarefa_linguagem = document.getElementById(`box-tarefa-linguagens`);

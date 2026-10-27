@@ -1,0 +1,48 @@
+@use "../utilites/colors.scss" as *;
+
+.tela_de_aviso{
+
+    display: none;
+    flex-direction: column;
+     position: fixed;
+     align-items: center;
+     justify-content: center;
+     z-index: 9999;
+     border: 1px solid $cor-prata;
+     width: 75%;
+     border-radius: 5px;
+     padding: 15px 0;
+     left: 20%;
+     top: 30%;
+     background: $cor-principal;
+
+     i{
+        font-size: 60px;
+        color: $cor-texto;
+        margin-bottom: 15px;
+     }
+     span{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $cor-texto;
+
+     }
+
+     p{
+        font-size: 15px;
+        color: $cor-texto;
+        width: 50%;
+        font-weight: 300;
+     }
+
+     button{
+        background: $cor-secundaria;
+        border: 1px solid black;
+        color: white;
+        font-weight: 800;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: 50%;
+     }
+}

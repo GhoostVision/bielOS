@@ -1,7 +1,7 @@
 @use "../utilites/colors.scss" as *;
 
 .lista-de-desejo{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
