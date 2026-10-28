@@ -13,6 +13,8 @@ const mes_inicio = document.getElementById(`mes_inicio`)
 const ano_inicio = document.getElementById(`ano_inicio`)
 const sistema_de_bom_dia = document.getElementById(`sistema_de_bom_dia`)
 
+const tela_de_aviso = document.getElementById(`tela_de_aviso`)
+
 // sistema de dias
 dia_inicio.innerText = dia
 
@@ -77,8 +79,15 @@ let gasto = 0
 const caixa_carteira_entrada = document.getElementById("caixa_carteira_entrada")
 
 function enviar_entrada() {
-    const valor_entrada = Number(document.getElementById(`valor_entrada`).value)
+    const valor_entrada_input = document.getElementById(`valor_entrada`).value
     const descrisao_entrada = document.getElementById(`descrisao_entrada`).value
+
+    if(valor_entrada_input.trim() === "" || descrisao_entrada.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
+
+    const valor_entrada = Number(document.getElementById(`valor_entrada`).value)
 
     saldo += valor_entrada
     total += valor_entrada
@@ -149,8 +158,15 @@ function enviar_entrada() {
 const caixa_carteira_gasto = document.getElementById("caixa_carteira_gasto")
 
 function enviar_gasto() {
-    const valor_gasto = Number(document.getElementById(`valor_gasto`).value)
+    const valor_gasto_input = document.getElementById(`valor_gasto`).value
     const descrisao_gasto = document.getElementById(`descrisao_gasto`).value
+
+    if(valor_gasto_input.trim() === "" || descrisao_gasto.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
+
+    const valor_gasto = Number(document.getElementById(`valor_gasto`).value)
 
     gasto += valor_gasto
     saldo -= valor_gasto
@@ -328,6 +344,11 @@ function addProjeto(){
     const InputDescricaoProjeto = document.getElementById(`DescricaoProjeto`).value
     const InputImagemProjeto = document.getElementById(`ImagemProjeto`).value
 
+    if(InputDescricaoProjeto.trim() === "" || InputImagemProjeto.trim() === "" || InputNomeProjeto.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
+
     const novoItemProjeto = document.createElement("div");
     novoItemProjeto.classList.add("card-projeto");
 
@@ -362,7 +383,6 @@ const caixa_lista_de_desejo = document.getElementById(`box-itens-desejo`)
 
 function addItemLIstaDeDesejo(){
 
-    const tela_de_aviso = document.getElementById(`tela_de_aviso`)
     const input_valor = document.getElementById(`input_valor_lista-de-desejo`).value
     const input_nome_lista_de_desejo = document.getElementById(`input_nome_lista-de-desejo`).value
     const input_img_lista_de_desejo = document.getElementById(`input_img_lista-de-desejo`).value
@@ -417,6 +437,11 @@ function enviar_tarefa_linguagens(){
 
     const input_tarefas_linguagens = document.getElementById(`input_tarefas_linguagens`).value;
     const contador_linguagens = document.getElementById(`contador_linguagens`)
+
+    if(input_tarefas_linguagens.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
   
     const nova_tarefa = document.createElement("div");
     nova_tarefa.classList.add("tarefa-estudo");
@@ -447,6 +472,11 @@ function enviar_tarefa_escola(){
 
     const input_tarefas_escola = document.getElementById(`input_tarefas_escola`).value;
     const contador_linguagens = document.getElementById(`contador_escola`)
+
+    if(input_tarefas_escola.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
   
     const nova_tarefa = document.createElement("div");
     nova_tarefa.classList.add("tarefa-estudo");
@@ -477,6 +507,11 @@ function enviar_tarefa_interesse(){
 
     const inpu_tarefa_interesse = document.getElementById(`input_tarefas_interesse`).value
     const contador_interesse = document.getElementById(`contador_interesse`)
+
+    if(inpu_tarefa_interesse.trim() === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
 
     const nova_tarefa = document.createElement("div")
     nova_tarefa.classList.add(`tarefa-estudo`)
