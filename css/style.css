@@ -40,7 +40,7 @@
 
 .inicio {
   width: 99%;
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 
@@ -499,7 +499,7 @@
 }
 
 .lista-de-desejo {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
