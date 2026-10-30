@@ -438,21 +438,12 @@
   display: flex;
   align-items: center;
 }
-.campo-digitar-entrada-carteira .input-entrada {
+.campo-digitar-entrada-carteira .input-entrada, .campo-digitar-entrada-carteira .input-gasto {
   width: 60%;
   height: 30px;
   margin: 0 5px;
   padding: 0 5px;
   border-radius: 5px;
-  border: 1px solid rgb(192, 192, 192);
-}
-.campo-digitar-entrada-carteira .select-entrada {
-  width: 19%;
-  height: 30px;
-  margin: 0 10px;
-  text-align: center;
-  border-radius: 5px;
-  background: white;
   border: 1px solid rgb(192, 192, 192);
 }
 .campo-digitar-entrada-carteira .button-entrada {
@@ -480,16 +471,32 @@
   border-radius: 5px;
   border: 1px solid rgb(192, 192, 192);
 }
-.campo-digitar-gasto-carteira .select-gasto {
-  width: 19%;
-  height: 30px;
-  margin: 0 10px;
-  text-align: center;
+.campo-digitar-gasto-carteira .button-gasto {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin: 0 5px;
   border-radius: 5px;
-  background: white;
+}
+
+.campo-digitar-gasto-investimento {
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  height: 10vh;
+  margin: 0 10px;
+  display: none;
+  align-items: center;
+}
+.campo-digitar-gasto-investimento .input-investimento {
+  width: 60%;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0 5px;
+  border-radius: 5px;
   border: 1px solid rgb(192, 192, 192);
 }
-.campo-digitar-gasto-carteira .button-gasto {
+.campo-digitar-gasto-investimento .button-investimento {
   background-color: black;
   color: white;
   border: 1px solid black;

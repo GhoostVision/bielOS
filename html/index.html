@@ -242,8 +242,9 @@
                   <p>Suas escolhas de hoje ajudam a construir o seu futuro.</p>
                 </div>
                 <div class="button_apresentacao_carteira">
-                  <button onclick="abrir_ganhos()" class="button_carteira"><i class="fa-solid fa-plus" aria-hidden="true"></i> Registrar ganhos</button>
-                  <button onclick="abrir_despesas()" class="button_carteira"><i class="fa-solid fa-minus" aria-hidden="true"></i> Registrar despesas</button>
+                  <button onclick="abrir_ganhos()" class="button_carteira"><i class="fa-solid fa-plus" aria-hidden="true"></i> Ganhos</button>
+                  <button onclick="abrir_despesas()" class="button_carteira"><i class="fa-solid fa-minus" aria-hidden="true"></i> Despesas</button>
+                  <button onclick="abrir_investimento()" class="button_carteira">Investimento</button>
                 </div>
               </div>
               <div class="box-card-financeiro">
@@ -271,7 +272,7 @@
                 <div class="cards-historico-carteira" id="caixa_carteira_entrada">
                   <h2><i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Entradas</h2>
                 </div>
-                <div class="cards-historico-carteira">
+                <div class="cards-historico-carteira" id="caixa_carteria_investimento">
                   <h2><i class="fa-solid fa-chart-pie" aria-hidden="true"></i> Investimentos</h2>
                 </div>
               </div>
@@ -284,6 +285,11 @@
                 <input type="text" class="input-gasto" id="descrisao_gasto" placeholder="Descreva a despesa">
                 <input type="number" class="input-gasto" id="valor_gasto" placeholder="Digite o valor">
                 <button class="button-gasto" onclick="enviar_gasto()">Registrar</button>
+              </div>
+              <div class="campo-digitar-gasto-investimento" id="aba_investimento">
+                <input type="text" class="input-investimento" id="descrisao_investimento" placeholder="Descreva o Investimento">
+                <input type="number" class="input-investimento" id="valor_investimento" placeholder="Digite o valor">
+                <button class="button-investimento" onclick="enviar_investimento()">Registrar</button>
               </div>
             </div>
 

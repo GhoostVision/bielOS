@@ -247,6 +247,7 @@ function enviar_gasto() {
 
 // abrir e fechar abas
 const aba_button_entrada = document.getElementById(`aba_entrada`)
+const aba_button_investimento = document.getElementById(`aba_investimento`)
 const aba_button_gastos = document.getElementById(`aba_gasto`)
 const aba_frase_lista_de_desejo = document.getElementById(`aba-frase-lista-de-desejo`)
 const aba_frase_projetos = document.getElementById(`aba-frase-projeto`)
@@ -261,11 +262,19 @@ function abrir_adicionar_item() {
 function abrir_ganhos() {
     aba_button_entrada.style.display = `flex`
     aba_button_gastos.style.display = `none`
+    aba_button_investimento.style.display = `none`
+}
+
+function abrir_investimento(){
+    aba_button_investimento.style.display = `flex`
+    aba_button_entrada.style.display = `none`
+    aba_button_gastos.style.display = `none`
 }
 
 function abrir_despesas() {
-    aba_button_entrada.style.display = `none`
     aba_button_gastos.style.display = `flex`
+    aba_button_entrada.style.display = `none`
+    aba_button_investimento.style.display = `none`
 }
 
 function abrir_adicionar_projeto(){
@@ -534,4 +543,49 @@ function enviar_tarefa_interesse(){
 
     box_tarefa_interesse.appendChild(nova_tarefa)
     nova_tarefa.append(text_tarefa, button_tarefa)
+}
+
+
+const caixa_carteria_investimento = document.getElementById(`caixa_carteria_investimento`)
+
+function enviar_investimento(){
+    const descrisao_investimento = document.getElementById(`descrisao_investimento`).value
+    const valor_investimento = document.getElementById(`valor_investimento`).value
+
+    if(descrisao_investimento.trim() === "" || valor_investimento === ""){
+        tela_de_aviso.style.display = `flex`
+        return
+    }
+
+    const valor_investimento_number = Number(document.getElementById(`valor_investimento`).value)
+
+    investimento += valor_investimento_number
+    total += valor_investimento_number
+
+    investimento_html.innerText = investimento.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    total_html.innerText = total.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    const novo_item = document.createElement(`div`)
+    novo_item.classList.add(`info-historico`)
+
+    const item_descrisao = document.createElement(`p`)
+    item_descrisao.classList.add(`descrisao-carteira`)
+    item_descrisao.innerText = descrisao_investimento
+
+    const valor_descrisao = document.createElement(`p`)
+    valor_descrisao.classList.add(`valor-descrisao`)
+    valor_descrisao.innerText = valor_investimento_number.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+    novo_item.append(valor_descrisao,item_descrisao)
+    caixa_carteria_investimento.appendChild(novo_item)
 }
