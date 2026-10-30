@@ -575,9 +575,9 @@ function enviar_investimento(){
     const novo_item = document.createElement(`div`)
     novo_item.classList.add(`info-historico`)
 
-    const item_descrisao = document.createElement(`p`)
-    item_descrisao.classList.add(`descrisao-carteira`)
-    item_descrisao.innerText = descrisao_investimento
+    const text_descrisao = document.createElement(`p`)
+    text_descrisao.classList.add(`descrisao-carteira`)
+    text_descrisao.innerText = descrisao_investimento
 
     const valor_descrisao = document.createElement(`p`)
     valor_descrisao.classList.add(`valor-descrisao`)
@@ -586,6 +586,28 @@ function enviar_investimento(){
         currency: `BRL`
     })
 
-    novo_item.append(valor_descrisao,item_descrisao)
+    const button_descrisao = document.createElement(`button`)
+    button_descrisao.innerText = `X`
+    button_descrisao.classList.add(`button_carteira`)
+    button_descrisao.addEventListener(`click`, remover_item)
+
+    function remover_item(){
+        novo_item.remove()
+        investimento -= valor_investimento_number
+        total -= valor_investimento_number
+
+        total_html.innerText = total.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`})
+
+        investimento_html.innerText = investimento.toLocaleString(`pt-BR`, {
+        style: `currency`,
+        currency: `BRL`
+    })
+
+        
+    }
+
+    novo_item.append(valor_descrisao, text_descrisao, button_descrisao)
     caixa_carteria_investimento.appendChild(novo_item)
 }
